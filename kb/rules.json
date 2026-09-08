@@ -1,0 +1,14 @@
+[
+  {"name":"edge_required", "head":["edge","?s","?d"], "body":[["requires","?s","?d"]]},
+  {"name":"edge_replica_a", "head":["edge","?s","?a"], "body":[["replicas","?s","?a","?b"]]},
+  {"name":"edge_replica_b", "head":["edge","?s","?b"], "body":[["replicas","?s","?a","?b"]]},
+  {"name":"reach_direct", "head":["reach","?s","?d"], "body":[["edge","?s","?d"]]},
+  {"name":"reach_recursive", "head":["reach","?s","?d"], "body":[["edge","?s","?m"],["reach","?m","?d"]]},
+  {"name":"down_observed", "head":["down","?s"], "body":[["alarm","?s"]]},
+  {"name":"down_required", "head":["down","?s"], "body":[["requires","?s","?d"],["down","?d"]]},
+  {"name":"down_both_replicas", "head":["down","?s"], "body":[["replicas","?s","?a","?b"],["down","?a"],["down","?b"]]},
+  {"name":"critical_impact", "head":["critical_down","?s"], "body":[["critical","?s"],["down","?s"]]},
+  {"name":"exposure", "head":["exposed","?s","?d"], "body":[["reach","?s","?d"],["alarm","?d"]]},
+  {"name":"degraded_a", "head":["degraded","?s"], "body":[["replicas","?s","?a","?b"],["down","?a"]]},
+  {"name":"degraded_b", "head":["degraded","?s"], "body":[["replicas","?s","?a","?b"],["down","?b"]]}
+]

@@ -1,0 +1,8601 @@
+[
+  {
+    "sample_id": 0,
+    "group": 0,
+    "failed": [
+      "n07",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 1,
+    "group": 0,
+    "failed": [
+      "n07",
+      "n15",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 2,
+    "group": 0,
+    "failed": [
+      "n11",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 3,
+    "group": 0,
+    "failed": [
+      "n00",
+      "n16",
+      "n17",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 4,
+    "group": 0,
+    "failed": [
+      "n01",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 5,
+    "group": 0,
+    "failed": [
+      "n06",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 6,
+    "group": 0,
+    "failed": [
+      "n04",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 7,
+    "group": 0,
+    "failed": [
+      "n01",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 8,
+    "group": 1,
+    "failed": [
+      "n21",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 9,
+    "group": 1,
+    "failed": [
+      "n07",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 10,
+    "group": 1,
+    "failed": [
+      "n00",
+      "n08",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 11,
+    "group": 1,
+    "failed": [
+      "n00"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 12,
+    "group": 1,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 13,
+    "group": 1,
+    "failed": [
+      "n13",
+      "n21",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 14,
+    "group": 1,
+    "failed": [
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 15,
+    "group": 1,
+    "failed": [
+      "n13",
+      "n17",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 16,
+    "group": 2,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 17,
+    "group": 2,
+    "failed": [
+      "n00",
+      "n01",
+      "n04",
+      "n05",
+      "n07",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 18,
+    "group": 2,
+    "failed": [
+      "n07",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 19,
+    "group": 2,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 20,
+    "group": 2,
+    "failed": [
+      "n00",
+      "n03",
+      "n08",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 21,
+    "group": 2,
+    "failed": [
+      "n01"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 22,
+    "group": 2,
+    "failed": [
+      "n08",
+      "n09",
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 23,
+    "group": 2,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 24,
+    "group": 3,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 25,
+    "group": 3,
+    "failed": [
+      "n18",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 26,
+    "group": 3,
+    "failed": [
+      "n03",
+      "n06",
+      "n16",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 27,
+    "group": 3,
+    "failed": [
+      "n01",
+      "n03",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 28,
+    "group": 3,
+    "failed": [
+      "n01",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 29,
+    "group": 3,
+    "failed": [
+      "n00",
+      "n07",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 30,
+    "group": 3,
+    "failed": [
+      "n05",
+      "n10",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 31,
+    "group": 3,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 32,
+    "group": 4,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 33,
+    "group": 4,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 34,
+    "group": 4,
+    "failed": [
+      "n02",
+      "n23",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 35,
+    "group": 4,
+    "failed": [
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 36,
+    "group": 4,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 37,
+    "group": 4,
+    "failed": [
+      "n28"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 38,
+    "group": 4,
+    "failed": [
+      "n09",
+      "n10",
+      "n12",
+      "n14",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 39,
+    "group": 4,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 40,
+    "group": 5,
+    "failed": [
+      "n08",
+      "n10",
+      "n11",
+      "n12",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 41,
+    "group": 5,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 42,
+    "group": 5,
+    "failed": [
+      "n11",
+      "n20",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 43,
+    "group": 5,
+    "failed": [
+      "n13",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 44,
+    "group": 5,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 45,
+    "group": 5,
+    "failed": [
+      "n09",
+      "n21",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 46,
+    "group": 5,
+    "failed": [
+      "n00",
+      "n10",
+      "n12",
+      "n13",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 47,
+    "group": 5,
+    "failed": [
+      "n03",
+      "n05",
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 48,
+    "group": 6,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 49,
+    "group": 6,
+    "failed": [
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 50,
+    "group": 6,
+    "failed": [
+      "n09",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 51,
+    "group": 6,
+    "failed": [
+      "n00",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 52,
+    "group": 6,
+    "failed": [
+      "n07",
+      "n13",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 53,
+    "group": 6,
+    "failed": [
+      "n03"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 54,
+    "group": 6,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 55,
+    "group": 6,
+    "failed": [
+      "n02",
+      "n05"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 56,
+    "group": 7,
+    "failed": [
+      "n03",
+      "n06",
+      "n11",
+      "n15",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 57,
+    "group": 7,
+    "failed": [
+      "n04"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 58,
+    "group": 7,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 59,
+    "group": 7,
+    "failed": [
+      "n08",
+      "n09",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 60,
+    "group": 7,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 61,
+    "group": 7,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 62,
+    "group": 7,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 63,
+    "group": 7,
+    "failed": [
+      "n00",
+      "n13",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 64,
+    "group": 8,
+    "failed": [
+      "n05",
+      "n11",
+      "n15",
+      "n23",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 65,
+    "group": 8,
+    "failed": [
+      "n01",
+      "n16",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 66,
+    "group": 8,
+    "failed": [
+      "n07",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 67,
+    "group": 8,
+    "failed": [
+      "n15",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 68,
+    "group": 8,
+    "failed": [
+      "n00",
+      "n01",
+      "n27",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 69,
+    "group": 8,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 70,
+    "group": 8,
+    "failed": [
+      "n23",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 71,
+    "group": 8,
+    "failed": [
+      "n04"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 72,
+    "group": 9,
+    "failed": [
+      "n02",
+      "n09",
+      "n10",
+      "n12",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 73,
+    "group": 9,
+    "failed": [
+      "n00",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 74,
+    "group": 9,
+    "failed": [
+      "n16",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 75,
+    "group": 9,
+    "failed": [
+      "n06",
+      "n08",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 76,
+    "group": 9,
+    "failed": [
+      "n01",
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 77,
+    "group": 9,
+    "failed": [
+      "n03",
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 78,
+    "group": 9,
+    "failed": [
+      "n06",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 79,
+    "group": 9,
+    "failed": [
+      "n05",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 80,
+    "group": 10,
+    "failed": [
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 81,
+    "group": 10,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 82,
+    "group": 10,
+    "failed": [
+      "n02",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 83,
+    "group": 10,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 84,
+    "group": 10,
+    "failed": [
+      "n12",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 85,
+    "group": 10,
+    "failed": [
+      "n14",
+      "n17",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 86,
+    "group": 10,
+    "failed": [
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 87,
+    "group": 10,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 88,
+    "group": 11,
+    "failed": [
+      "n02",
+      "n09",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 89,
+    "group": 11,
+    "failed": [
+      "n01",
+      "n06",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 90,
+    "group": 11,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 91,
+    "group": 11,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 92,
+    "group": 11,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 93,
+    "group": 11,
+    "failed": [
+      "n01",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 94,
+    "group": 11,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 95,
+    "group": 11,
+    "failed": [
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 96,
+    "group": 12,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 97,
+    "group": 12,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 98,
+    "group": 12,
+    "failed": [
+      "n02",
+      "n06",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 99,
+    "group": 12,
+    "failed": [
+      "n03",
+      "n04"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 100,
+    "group": 12,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 101,
+    "group": 12,
+    "failed": [
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 102,
+    "group": 12,
+    "failed": [
+      "n09",
+      "n15",
+      "n16",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 103,
+    "group": 12,
+    "failed": [
+      "n05",
+      "n15",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 104,
+    "group": 13,
+    "failed": [
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 105,
+    "group": 13,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 106,
+    "group": 13,
+    "failed": [
+      "n00",
+      "n02",
+      "n10",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 107,
+    "group": 13,
+    "failed": [
+      "n01"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 108,
+    "group": 13,
+    "failed": [
+      "n00",
+      "n08",
+      "n13",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 109,
+    "group": 13,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 110,
+    "group": 13,
+    "failed": [
+      "n09",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 111,
+    "group": 13,
+    "failed": [
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 112,
+    "group": 14,
+    "failed": [
+      "n01",
+      "n02",
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 113,
+    "group": 14,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 114,
+    "group": 14,
+    "failed": [
+      "n18",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 115,
+    "group": 14,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 116,
+    "group": 14,
+    "failed": [
+      "n14",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 117,
+    "group": 14,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 118,
+    "group": 14,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 119,
+    "group": 14,
+    "failed": [
+      "n07",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 120,
+    "group": 15,
+    "failed": [
+      "n02",
+      "n03"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 121,
+    "group": 15,
+    "failed": [
+      "n05",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 122,
+    "group": 15,
+    "failed": [
+      "n04"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 123,
+    "group": 15,
+    "failed": [
+      "n03",
+      "n09",
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 124,
+    "group": 15,
+    "failed": [
+      "n02",
+      "n04",
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 125,
+    "group": 15,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 126,
+    "group": 15,
+    "failed": [
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 127,
+    "group": 15,
+    "failed": [
+      "n00",
+      "n13",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 128,
+    "group": 16,
+    "failed": [
+      "n03",
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 129,
+    "group": 16,
+    "failed": [
+      "n08",
+      "n09",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 130,
+    "group": 16,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 131,
+    "group": 16,
+    "failed": [
+      "n03",
+      "n09",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 132,
+    "group": 16,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 133,
+    "group": 16,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 134,
+    "group": 16,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 135,
+    "group": 16,
+    "failed": [
+      "n03",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 136,
+    "group": 17,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 137,
+    "group": 17,
+    "failed": [
+      "n00",
+      "n03",
+      "n16",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 138,
+    "group": 17,
+    "failed": [
+      "n01",
+      "n02",
+      "n15",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 139,
+    "group": 17,
+    "failed": [
+      "n10",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 140,
+    "group": 17,
+    "failed": [
+      "n04",
+      "n18",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 141,
+    "group": 17,
+    "failed": [
+      "n11",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 142,
+    "group": 17,
+    "failed": [
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 143,
+    "group": 17,
+    "failed": [
+      "n00",
+      "n03"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 144,
+    "group": 18,
+    "failed": [
+      "n14",
+      "n23",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 145,
+    "group": 18,
+    "failed": [
+      "n01",
+      "n06",
+      "n09",
+      "n13",
+      "n16",
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 146,
+    "group": 18,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 147,
+    "group": 18,
+    "failed": [
+      "n05",
+      "n06",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 148,
+    "group": 18,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 149,
+    "group": 18,
+    "failed": [
+      "n11",
+      "n20",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 150,
+    "group": 18,
+    "failed": [
+      "n04",
+      "n05",
+      "n12",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 151,
+    "group": 18,
+    "failed": [
+      "n08",
+      "n09",
+      "n11"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 152,
+    "group": 19,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 153,
+    "group": 19,
+    "failed": [
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 154,
+    "group": 19,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 155,
+    "group": 19,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 156,
+    "group": 19,
+    "failed": [
+      "n01",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 157,
+    "group": 19,
+    "failed": [
+      "n09",
+      "n10",
+      "n14",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 158,
+    "group": 19,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 159,
+    "group": 19,
+    "failed": [
+      "n01",
+      "n06",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 160,
+    "group": 20,
+    "failed": [
+      "n11",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 161,
+    "group": 20,
+    "failed": [
+      "n03",
+      "n14",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 162,
+    "group": 20,
+    "failed": [
+      "n04",
+      "n06",
+      "n09",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 163,
+    "group": 20,
+    "failed": [
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 164,
+    "group": 20,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 165,
+    "group": 20,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 166,
+    "group": 20,
+    "failed": [
+      "n03",
+      "n08",
+      "n17",
+      "n27"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 167,
+    "group": 20,
+    "failed": [
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 168,
+    "group": 21,
+    "failed": [
+      "n13",
+      "n16",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 169,
+    "group": 21,
+    "failed": [
+      "n04",
+      "n06",
+      "n14",
+      "n16",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 170,
+    "group": 21,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 171,
+    "group": 21,
+    "failed": [
+      "n10",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 172,
+    "group": 21,
+    "failed": [
+      "n05",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 173,
+    "group": 21,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 174,
+    "group": 21,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 175,
+    "group": 21,
+    "failed": [
+      "n06",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 176,
+    "group": 22,
+    "failed": [
+      "n11",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 177,
+    "group": 22,
+    "failed": [
+      "n03",
+      "n13",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 178,
+    "group": 22,
+    "failed": [
+      "n07",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 179,
+    "group": 22,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 180,
+    "group": 22,
+    "failed": [
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 181,
+    "group": 22,
+    "failed": [
+      "n08",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 182,
+    "group": 22,
+    "failed": [
+      "n01"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 183,
+    "group": 22,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 184,
+    "group": 23,
+    "failed": [
+      "n14",
+      "n16",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 185,
+    "group": 23,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 186,
+    "group": 23,
+    "failed": [
+      "n10",
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 187,
+    "group": 23,
+    "failed": [
+      "n03",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 188,
+    "group": 23,
+    "failed": [
+      "n12",
+      "n15",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 189,
+    "group": 23,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 190,
+    "group": 23,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 191,
+    "group": 23,
+    "failed": [
+      "n01",
+      "n05",
+      "n09",
+      "n17",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 192,
+    "group": 24,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 193,
+    "group": 24,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 194,
+    "group": 24,
+    "failed": [
+      "n11",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 195,
+    "group": 24,
+    "failed": [
+      "n16",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 196,
+    "group": 24,
+    "failed": [
+      "n13",
+      "n20",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 197,
+    "group": 24,
+    "failed": [
+      "n05",
+      "n07",
+      "n12",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 198,
+    "group": 24,
+    "failed": [
+      "n02",
+      "n03",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 199,
+    "group": 24,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 200,
+    "group": 25,
+    "failed": [
+      "n14",
+      "n21",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 201,
+    "group": 25,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 202,
+    "group": 25,
+    "failed": [
+      "n00"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 203,
+    "group": 25,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 204,
+    "group": 25,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 205,
+    "group": 25,
+    "failed": [
+      "n02",
+      "n06",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 206,
+    "group": 25,
+    "failed": [
+      "n03",
+      "n05",
+      "n06",
+      "n09",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 207,
+    "group": 25,
+    "failed": [
+      "n10",
+      "n12",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 208,
+    "group": 26,
+    "failed": [
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 209,
+    "group": 26,
+    "failed": [
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 210,
+    "group": 26,
+    "failed": [
+      "n05",
+      "n08",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 211,
+    "group": 26,
+    "failed": [
+      "n06",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 212,
+    "group": 26,
+    "failed": [
+      "n18",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 213,
+    "group": 26,
+    "failed": [
+      "n00",
+      "n02",
+      "n11",
+      "n19",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 214,
+    "group": 26,
+    "failed": [
+      "n02",
+      "n06",
+      "n16",
+      "n27"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 215,
+    "group": 26,
+    "failed": [
+      "n14",
+      "n21",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 216,
+    "group": 27,
+    "failed": [
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 217,
+    "group": 27,
+    "failed": [
+      "n00"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 218,
+    "group": 27,
+    "failed": [
+      "n06",
+      "n08",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 219,
+    "group": 27,
+    "failed": [
+      "n12",
+      "n18",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 220,
+    "group": 27,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 221,
+    "group": 27,
+    "failed": [
+      "n02",
+      "n07",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 222,
+    "group": 27,
+    "failed": [
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 223,
+    "group": 27,
+    "failed": [
+      "n09",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 224,
+    "group": 28,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 225,
+    "group": 28,
+    "failed": [
+      "n00",
+      "n09",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 226,
+    "group": 28,
+    "failed": [
+      "n02",
+      "n05",
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 227,
+    "group": 28,
+    "failed": [
+      "n02",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 228,
+    "group": 28,
+    "failed": [
+      "n00"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 229,
+    "group": 28,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 230,
+    "group": 28,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 231,
+    "group": 28,
+    "failed": [
+      "n09",
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 232,
+    "group": 29,
+    "failed": [
+      "n09",
+      "n10",
+      "n12",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 233,
+    "group": 29,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 234,
+    "group": 29,
+    "failed": [
+      "n16",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 235,
+    "group": 29,
+    "failed": [
+      "n03",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 236,
+    "group": 29,
+    "failed": [
+      "n01",
+      "n05",
+      "n08",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 237,
+    "group": 29,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 238,
+    "group": 29,
+    "failed": [
+      "n07",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 239,
+    "group": 29,
+    "failed": [
+      "n05",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 240,
+    "group": 30,
+    "failed": [
+      "n11",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 241,
+    "group": 30,
+    "failed": [
+      "n00",
+      "n01"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 242,
+    "group": 30,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 243,
+    "group": 30,
+    "failed": [
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 244,
+    "group": 30,
+    "failed": [
+      "n07",
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 245,
+    "group": 30,
+    "failed": [
+      "n11",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 246,
+    "group": 30,
+    "failed": [
+      "n01",
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 247,
+    "group": 30,
+    "failed": [
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 248,
+    "group": 31,
+    "failed": [
+      "n08",
+      "n20",
+      "n27"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 249,
+    "group": 31,
+    "failed": [
+      "n15",
+      "n20",
+      "n24",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 250,
+    "group": 31,
+    "failed": [
+      "n02",
+      "n10",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 251,
+    "group": 31,
+    "failed": [
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 252,
+    "group": 31,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 253,
+    "group": 31,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 254,
+    "group": 31,
+    "failed": [
+      "n07",
+      "n10",
+      "n11",
+      "n13",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 255,
+    "group": 31,
+    "failed": [
+      "n00",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 256,
+    "group": 32,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 257,
+    "group": 32,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 258,
+    "group": 32,
+    "failed": [
+      "n06",
+      "n13",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 259,
+    "group": 32,
+    "failed": [
+      "n00",
+      "n10",
+      "n13",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 260,
+    "group": 32,
+    "failed": [
+      "n00",
+      "n07",
+      "n12",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 261,
+    "group": 32,
+    "failed": [
+      "n03",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 262,
+    "group": 32,
+    "failed": [
+      "n13",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 263,
+    "group": 32,
+    "failed": [
+      "n14",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 264,
+    "group": 33,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 265,
+    "group": 33,
+    "failed": [
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 266,
+    "group": 33,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 267,
+    "group": 33,
+    "failed": [
+      "n03"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 268,
+    "group": 33,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 269,
+    "group": 33,
+    "failed": [
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 270,
+    "group": 33,
+    "failed": [
+      "n06",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 271,
+    "group": 33,
+    "failed": [
+      "n14",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 272,
+    "group": 34,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 273,
+    "group": 34,
+    "failed": [
+      "n02",
+      "n05",
+      "n12",
+      "n18",
+      "n20",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 274,
+    "group": 34,
+    "failed": [
+      "n12",
+      "n21",
+      "n23",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 275,
+    "group": 34,
+    "failed": [
+      "n00",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 276,
+    "group": 34,
+    "failed": [
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 277,
+    "group": 34,
+    "failed": [
+      "n00",
+      "n08",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 278,
+    "group": 34,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 279,
+    "group": 34,
+    "failed": [
+      "n00",
+      "n01",
+      "n06",
+      "n21",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 280,
+    "group": 35,
+    "failed": [
+      "n02",
+      "n12",
+      "n17",
+      "n18",
+      "n19",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 281,
+    "group": 35,
+    "failed": [
+      "n07",
+      "n15",
+      "n20",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 282,
+    "group": 35,
+    "failed": [
+      "n08",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 283,
+    "group": 35,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 284,
+    "group": 35,
+    "failed": [
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 285,
+    "group": 35,
+    "failed": [
+      "n16",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 286,
+    "group": 35,
+    "failed": [
+      "n09",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 287,
+    "group": 35,
+    "failed": [
+      "n00"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 288,
+    "group": 36,
+    "failed": [
+      "n22",
+      "n25",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 289,
+    "group": 36,
+    "failed": [
+      "n03",
+      "n07",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 290,
+    "group": 36,
+    "failed": [
+      "n01",
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 291,
+    "group": 36,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 292,
+    "group": 36,
+    "failed": [
+      "n08",
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 293,
+    "group": 36,
+    "failed": [
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 294,
+    "group": 36,
+    "failed": [
+      "n07",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 295,
+    "group": 36,
+    "failed": [
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 296,
+    "group": 37,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 297,
+    "group": 37,
+    "failed": [
+      "n02",
+      "n03",
+      "n10",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 298,
+    "group": 37,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 299,
+    "group": 37,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 300,
+    "group": 37,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 301,
+    "group": 37,
+    "failed": [
+      "n01",
+      "n06",
+      "n07"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 302,
+    "group": 37,
+    "failed": [
+      "n01"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 303,
+    "group": 37,
+    "failed": [
+      "n02",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 304,
+    "group": 38,
+    "failed": [
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 305,
+    "group": 38,
+    "failed": [
+      "n02",
+      "n04",
+      "n08",
+      "n14",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 306,
+    "group": 38,
+    "failed": [
+      "n11",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 307,
+    "group": 38,
+    "failed": [
+      "n04",
+      "n08",
+      "n21",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 308,
+    "group": 38,
+    "failed": [
+      "n19",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 309,
+    "group": 38,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 310,
+    "group": 38,
+    "failed": [
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 311,
+    "group": 38,
+    "failed": [
+      "n15",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 312,
+    "group": 39,
+    "failed": [
+      "n05",
+      "n11",
+      "n13",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 313,
+    "group": 39,
+    "failed": [
+      "n02",
+      "n14",
+      "n18",
+      "n19",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 314,
+    "group": 39,
+    "failed": [
+      "n04",
+      "n07",
+      "n13",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 315,
+    "group": 39,
+    "failed": [
+      "n08",
+      "n10",
+      "n21",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 316,
+    "group": 39,
+    "failed": [
+      "n01",
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 317,
+    "group": 39,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 318,
+    "group": 39,
+    "failed": [
+      "n09",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 319,
+    "group": 39,
+    "failed": [
+      "n19",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 320,
+    "group": 40,
+    "failed": [
+      "n00",
+      "n09",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 321,
+    "group": 40,
+    "failed": [
+      "n11",
+      "n12",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 322,
+    "group": 40,
+    "failed": [
+      "n05",
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 323,
+    "group": 40,
+    "failed": [
+      "n09",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 324,
+    "group": 40,
+    "failed": [
+      "n11",
+      "n16",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 325,
+    "group": 40,
+    "failed": [
+      "n14",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 326,
+    "group": 40,
+    "failed": [
+      "n02",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 327,
+    "group": 40,
+    "failed": [
+      "n04",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 328,
+    "group": 41,
+    "failed": [
+      "n06"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 329,
+    "group": 41,
+    "failed": [
+      "n12",
+      "n13",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 330,
+    "group": 41,
+    "failed": [
+      "n02",
+      "n05",
+      "n15",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 331,
+    "group": 41,
+    "failed": [
+      "n03",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 332,
+    "group": 41,
+    "failed": [
+      "n02",
+      "n04",
+      "n09",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 333,
+    "group": 41,
+    "failed": [
+      "n14",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 334,
+    "group": 41,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 335,
+    "group": 41,
+    "failed": [
+      "n09",
+      "n10",
+      "n13",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 336,
+    "group": 42,
+    "failed": [
+      "n02",
+      "n04",
+      "n11",
+      "n18",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 337,
+    "group": 42,
+    "failed": [
+      "n13",
+      "n17",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 338,
+    "group": 42,
+    "failed": [
+      "n20",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 339,
+    "group": 42,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 340,
+    "group": 42,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 341,
+    "group": 42,
+    "failed": [
+      "n01",
+      "n02",
+      "n11"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 342,
+    "group": 42,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 343,
+    "group": 42,
+    "failed": [
+      "n06",
+      "n16",
+      "n24",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 344,
+    "group": 43,
+    "failed": [
+      "n06",
+      "n19",
+      "n27"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 345,
+    "group": 43,
+    "failed": [
+      "n11",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 346,
+    "group": 43,
+    "failed": [
+      "n09",
+      "n14",
+      "n21",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 347,
+    "group": 43,
+    "failed": [
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 348,
+    "group": 43,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 349,
+    "group": 43,
+    "failed": [
+      "n15",
+      "n18",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 350,
+    "group": 43,
+    "failed": [
+      "n00",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 351,
+    "group": 43,
+    "failed": [
+      "n00",
+      "n05",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 352,
+    "group": 44,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 353,
+    "group": 44,
+    "failed": [
+      "n09",
+      "n13",
+      "n15",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 354,
+    "group": 44,
+    "failed": [
+      "n04",
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 355,
+    "group": 44,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 356,
+    "group": 44,
+    "failed": [
+      "n01",
+      "n03",
+      "n07",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 357,
+    "group": 44,
+    "failed": [
+      "n16",
+      "n21",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 358,
+    "group": 44,
+    "failed": [
+      "n03",
+      "n06",
+      "n11",
+      "n12",
+      "n18",
+      "n21",
+      "n25",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 359,
+    "group": 44,
+    "failed": [
+      "n08",
+      "n13",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 360,
+    "group": 45,
+    "failed": [
+      "n05",
+      "n07",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 361,
+    "group": 45,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 362,
+    "group": 45,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 363,
+    "group": 45,
+    "failed": [
+      "n05",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 364,
+    "group": 45,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 365,
+    "group": 45,
+    "failed": [
+      "n03",
+      "n05",
+      "n13",
+      "n16",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 366,
+    "group": 45,
+    "failed": [
+      "n00",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 367,
+    "group": 45,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 368,
+    "group": 46,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 369,
+    "group": 46,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 370,
+    "group": 46,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 371,
+    "group": 46,
+    "failed": [
+      "n01",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 372,
+    "group": 46,
+    "failed": [
+      "n05",
+      "n16",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 373,
+    "group": 46,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 374,
+    "group": 46,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 375,
+    "group": 46,
+    "failed": [
+      "n10",
+      "n11"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 376,
+    "group": 47,
+    "failed": [
+      "n00",
+      "n09",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 377,
+    "group": 47,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 378,
+    "group": 47,
+    "failed": [
+      "n03",
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 379,
+    "group": 47,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 380,
+    "group": 47,
+    "failed": [
+      "n01",
+      "n06",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 381,
+    "group": 47,
+    "failed": [
+      "n06"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 382,
+    "group": 47,
+    "failed": [
+      "n02",
+      "n09",
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 383,
+    "group": 47,
+    "failed": [
+      "n06",
+      "n08",
+      "n15",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 384,
+    "group": 48,
+    "failed": [
+      "n09",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 385,
+    "group": 48,
+    "failed": [
+      "n04",
+      "n17",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 386,
+    "group": 48,
+    "failed": [
+      "n15",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 387,
+    "group": 48,
+    "failed": [
+      "n04",
+      "n14",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 388,
+    "group": 48,
+    "failed": [
+      "n05",
+      "n10",
+      "n18",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 389,
+    "group": 48,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 390,
+    "group": 48,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 391,
+    "group": 48,
+    "failed": [
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 392,
+    "group": 49,
+    "failed": [
+      "n08",
+      "n10",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 393,
+    "group": 49,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 394,
+    "group": 49,
+    "failed": [
+      "n13",
+      "n23",
+      "n27"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 395,
+    "group": 49,
+    "failed": [
+      "n06",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 396,
+    "group": 49,
+    "failed": [
+      "n10",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 397,
+    "group": 49,
+    "failed": [
+      "n04",
+      "n18",
+      "n24",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 398,
+    "group": 49,
+    "failed": [
+      "n14",
+      "n19",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 399,
+    "group": 49,
+    "failed": [
+      "n03",
+      "n14",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 400,
+    "group": 50,
+    "failed": [
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 401,
+    "group": 50,
+    "failed": [
+      "n04",
+      "n12",
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 402,
+    "group": 50,
+    "failed": [
+      "n00",
+      "n07",
+      "n09",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 403,
+    "group": 50,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 404,
+    "group": 50,
+    "failed": [
+      "n00",
+      "n03",
+      "n13",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 405,
+    "group": 50,
+    "failed": [
+      "n09",
+      "n14",
+      "n22",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 406,
+    "group": 50,
+    "failed": [
+      "n13",
+      "n21",
+      "n23",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 407,
+    "group": 50,
+    "failed": [
+      "n01",
+      "n06",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 408,
+    "group": 51,
+    "failed": [
+      "n06",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 409,
+    "group": 51,
+    "failed": [
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 410,
+    "group": 51,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 411,
+    "group": 51,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 412,
+    "group": 51,
+    "failed": [
+      "n06",
+      "n15",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 413,
+    "group": 51,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 414,
+    "group": 51,
+    "failed": [
+      "n01",
+      "n03",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 415,
+    "group": 51,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 416,
+    "group": 52,
+    "failed": [
+      "n02",
+      "n14",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 417,
+    "group": 52,
+    "failed": [
+      "n11",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 418,
+    "group": 52,
+    "failed": [
+      "n05",
+      "n19",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 419,
+    "group": 52,
+    "failed": [
+      "n08",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 420,
+    "group": 52,
+    "failed": [
+      "n03",
+      "n18",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 421,
+    "group": 52,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 422,
+    "group": 52,
+    "failed": [
+      "n15",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 423,
+    "group": 52,
+    "failed": [
+      "n01",
+      "n13",
+      "n17",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 424,
+    "group": 53,
+    "failed": [
+      "n01",
+      "n03",
+      "n10",
+      "n19",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 425,
+    "group": 53,
+    "failed": [
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 426,
+    "group": 53,
+    "failed": [
+      "n07",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 427,
+    "group": 53,
+    "failed": [
+      "n15",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 428,
+    "group": 53,
+    "failed": [
+      "n09",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 429,
+    "group": 53,
+    "failed": [
+      "n01"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 430,
+    "group": 53,
+    "failed": [
+      "n00",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 431,
+    "group": 53,
+    "failed": [
+      "n19",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 432,
+    "group": 54,
+    "failed": [
+      "n07",
+      "n11",
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 433,
+    "group": 54,
+    "failed": [
+      "n01",
+      "n05",
+      "n07",
+      "n09",
+      "n24",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 434,
+    "group": 54,
+    "failed": [
+      "n16",
+      "n18",
+      "n24",
+      "n27"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 435,
+    "group": 54,
+    "failed": [
+      "n10",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 436,
+    "group": 54,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 437,
+    "group": 54,
+    "failed": [
+      "n21",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 438,
+    "group": 54,
+    "failed": [
+      "n14",
+      "n19",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 439,
+    "group": 54,
+    "failed": [
+      "n02",
+      "n03",
+      "n06",
+      "n14",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 440,
+    "group": 55,
+    "failed": [
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 441,
+    "group": 55,
+    "failed": [
+      "n03",
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 442,
+    "group": 55,
+    "failed": [
+      "n05",
+      "n09",
+      "n17",
+      "n21",
+      "n24",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 443,
+    "group": 55,
+    "failed": [
+      "n03",
+      "n09",
+      "n14",
+      "n18",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 444,
+    "group": 55,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 445,
+    "group": 55,
+    "failed": [
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 446,
+    "group": 55,
+    "failed": [
+      "n10",
+      "n12",
+      "n13",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 447,
+    "group": 55,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 448,
+    "group": 56,
+    "failed": [
+      "n06",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 449,
+    "group": 56,
+    "failed": [
+      "n00",
+      "n03",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 450,
+    "group": 56,
+    "failed": [
+      "n09",
+      "n12",
+      "n18",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 451,
+    "group": 56,
+    "failed": [
+      "n08",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 452,
+    "group": 56,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 453,
+    "group": 56,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 454,
+    "group": 56,
+    "failed": [
+      "n00",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 455,
+    "group": 56,
+    "failed": [
+      "n09",
+      "n18",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 456,
+    "group": 57,
+    "failed": [
+      "n20",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 457,
+    "group": 57,
+    "failed": [
+      "n22",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 458,
+    "group": 57,
+    "failed": [
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 459,
+    "group": 57,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 460,
+    "group": 57,
+    "failed": [
+      "n08",
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 461,
+    "group": 57,
+    "failed": [
+      "n17",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 462,
+    "group": 57,
+    "failed": [
+      "n04",
+      "n07",
+      "n12",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 463,
+    "group": 57,
+    "failed": [
+      "n00",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 464,
+    "group": 58,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 465,
+    "group": 58,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 466,
+    "group": 58,
+    "failed": [
+      "n03",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 467,
+    "group": 58,
+    "failed": [
+      "n02",
+      "n17",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 468,
+    "group": 58,
+    "failed": [
+      "n11",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 469,
+    "group": 58,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 470,
+    "group": 58,
+    "failed": [
+      "n00",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 471,
+    "group": 58,
+    "failed": [
+      "n15",
+      "n18",
+      "n19",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 472,
+    "group": 59,
+    "failed": [
+      "n04",
+      "n10",
+      "n16",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 473,
+    "group": 59,
+    "failed": [
+      "n09",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 474,
+    "group": 59,
+    "failed": [
+      "n09",
+      "n14",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 475,
+    "group": 59,
+    "failed": [
+      "n02",
+      "n14",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 476,
+    "group": 59,
+    "failed": [
+      "n06"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 477,
+    "group": 59,
+    "failed": [
+      "n12",
+      "n16",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 478,
+    "group": 59,
+    "failed": [
+      "n14",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 479,
+    "group": 59,
+    "failed": [
+      "n04",
+      "n10",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 480,
+    "group": 60,
+    "failed": [
+      "n06",
+      "n12",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 481,
+    "group": 60,
+    "failed": [
+      "n06",
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 482,
+    "group": 60,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 483,
+    "group": 60,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 484,
+    "group": 60,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 485,
+    "group": 60,
+    "failed": [
+      "n03"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 486,
+    "group": 60,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 487,
+    "group": 60,
+    "failed": [
+      "n03",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 488,
+    "group": 61,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 489,
+    "group": 61,
+    "failed": [
+      "n07",
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 490,
+    "group": 61,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 491,
+    "group": 61,
+    "failed": [
+      "n03",
+      "n07",
+      "n08"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 492,
+    "group": 61,
+    "failed": [
+      "n01",
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 493,
+    "group": 61,
+    "failed": [
+      "n00",
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 494,
+    "group": 61,
+    "failed": [
+      "n07",
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 495,
+    "group": 61,
+    "failed": [
+      "n09",
+      "n16",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 496,
+    "group": 62,
+    "failed": [
+      "n03",
+      "n15",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 497,
+    "group": 62,
+    "failed": [
+      "n07",
+      "n08",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 498,
+    "group": 62,
+    "failed": [
+      "n17",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 499,
+    "group": 62,
+    "failed": [
+      "n09",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 500,
+    "group": 62,
+    "failed": [
+      "n09",
+      "n24",
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 501,
+    "group": 62,
+    "failed": [
+      "n10",
+      "n18",
+      "n23",
+      "n25",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 502,
+    "group": 62,
+    "failed": [
+      "n13",
+      "n14",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 503,
+    "group": 62,
+    "failed": [
+      "n10",
+      "n24",
+      "n26",
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 504,
+    "group": 63,
+    "failed": [
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 505,
+    "group": 63,
+    "failed": [
+      "n01",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 506,
+    "group": 63,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 507,
+    "group": 63,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 508,
+    "group": 63,
+    "failed": [
+      "n10",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 509,
+    "group": 63,
+    "failed": [
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 510,
+    "group": 63,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 511,
+    "group": 63,
+    "failed": [
+      "n03",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 512,
+    "group": 64,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 513,
+    "group": 64,
+    "failed": [
+      "n05",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 514,
+    "group": 64,
+    "failed": [
+      "n19",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 515,
+    "group": 64,
+    "failed": [
+      "n00",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 516,
+    "group": 64,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 517,
+    "group": 64,
+    "failed": [
+      "n01"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 518,
+    "group": 64,
+    "failed": [
+      "n03",
+      "n07",
+      "n08",
+      "n20",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 519,
+    "group": 64,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 520,
+    "group": 65,
+    "failed": [
+      "n11",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 521,
+    "group": 65,
+    "failed": [
+      "n02",
+      "n06",
+      "n12",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 522,
+    "group": 65,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 523,
+    "group": 65,
+    "failed": [
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 524,
+    "group": 65,
+    "failed": [
+      "n01"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 525,
+    "group": 65,
+    "failed": [
+      "n06",
+      "n16",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 526,
+    "group": 65,
+    "failed": [
+      "n20",
+      "n22",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 527,
+    "group": 65,
+    "failed": [
+      "n03",
+      "n10",
+      "n11"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 528,
+    "group": 66,
+    "failed": [
+      "n01",
+      "n05",
+      "n06"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 529,
+    "group": 66,
+    "failed": [
+      "n05",
+      "n08",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 530,
+    "group": 66,
+    "failed": [
+      "n01",
+      "n09",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 531,
+    "group": 66,
+    "failed": [
+      "n00",
+      "n05",
+      "n08",
+      "n10",
+      "n11",
+      "n16",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 532,
+    "group": 66,
+    "failed": [
+      "n03",
+      "n10",
+      "n15",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 533,
+    "group": 66,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 534,
+    "group": 66,
+    "failed": [
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 535,
+    "group": 66,
+    "failed": [
+      "n03",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 536,
+    "group": 67,
+    "failed": [
+      "n15",
+      "n24",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 537,
+    "group": 67,
+    "failed": [
+      "n07",
+      "n11",
+      "n18",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 538,
+    "group": 67,
+    "failed": [
+      "n11",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 539,
+    "group": 67,
+    "failed": [
+      "n03",
+      "n12",
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 540,
+    "group": 67,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 541,
+    "group": 67,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 542,
+    "group": 67,
+    "failed": [
+      "n00",
+      "n08",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 543,
+    "group": 67,
+    "failed": [
+      "n02",
+      "n10",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 544,
+    "group": 68,
+    "failed": [
+      "n09",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 545,
+    "group": 68,
+    "failed": [
+      "n05",
+      "n07",
+      "n08",
+      "n14",
+      "n20",
+      "n21",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 546,
+    "group": 68,
+    "failed": [
+      "n02",
+      "n13",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 547,
+    "group": 68,
+    "failed": [
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 548,
+    "group": 68,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 549,
+    "group": 68,
+    "failed": [
+      "n04",
+      "n09",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 550,
+    "group": 68,
+    "failed": [
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 551,
+    "group": 68,
+    "failed": [
+      "n01",
+      "n02",
+      "n11",
+      "n19",
+      "n25",
+      "n26",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 552,
+    "group": 69,
+    "failed": [
+      "n00",
+      "n04",
+      "n05",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 553,
+    "group": 69,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 554,
+    "group": 69,
+    "failed": [
+      "n05",
+      "n16",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 555,
+    "group": 69,
+    "failed": [
+      "n04",
+      "n09",
+      "n20",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 556,
+    "group": 69,
+    "failed": [
+      "n02",
+      "n06",
+      "n13",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 557,
+    "group": 69,
+    "failed": [
+      "n17",
+      "n21",
+      "n25",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 558,
+    "group": 69,
+    "failed": [
+      "n07",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 559,
+    "group": 69,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 560,
+    "group": 70,
+    "failed": [
+      "n04",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 561,
+    "group": 70,
+    "failed": [
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 562,
+    "group": 70,
+    "failed": [
+      "n02",
+      "n09",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 563,
+    "group": 70,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 564,
+    "group": 70,
+    "failed": [
+      "n06",
+      "n13",
+      "n14",
+      "n24",
+      "n28"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 565,
+    "group": 70,
+    "failed": [
+      "n01",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 566,
+    "group": 70,
+    "failed": [
+      "n03",
+      "n06",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 567,
+    "group": 70,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 568,
+    "group": 71,
+    "failed": [
+      "n07",
+      "n17",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 569,
+    "group": 71,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 570,
+    "group": 71,
+    "failed": [
+      "n07",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 571,
+    "group": 71,
+    "failed": [
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 572,
+    "group": 71,
+    "failed": [
+      "n08",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 573,
+    "group": 71,
+    "failed": [
+      "n00",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 574,
+    "group": 71,
+    "failed": [
+      "n01",
+      "n02",
+      "n05",
+      "n10",
+      "n17",
+      "n18",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 575,
+    "group": 71,
+    "failed": [
+      "n02",
+      "n05",
+      "n10",
+      "n22",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 576,
+    "group": 72,
+    "failed": [
+      "n15",
+      "n18",
+      "n21",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 577,
+    "group": 72,
+    "failed": [
+      "n01",
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 578,
+    "group": 72,
+    "failed": [
+      "n01",
+      "n04",
+      "n06",
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 579,
+    "group": 72,
+    "failed": [
+      "n03",
+      "n11"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 580,
+    "group": 72,
+    "failed": [
+      "n05",
+      "n06",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 581,
+    "group": 72,
+    "failed": [
+      "n27"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 582,
+    "group": 72,
+    "failed": [
+      "n02",
+      "n04"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 583,
+    "group": 72,
+    "failed": [
+      "n03",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 584,
+    "group": 73,
+    "failed": [
+      "n05",
+      "n16",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 585,
+    "group": 73,
+    "failed": [
+      "n25",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 586,
+    "group": 73,
+    "failed": [
+      "n13",
+      "n18",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 587,
+    "group": 73,
+    "failed": [
+      "n03",
+      "n04",
+      "n15",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 588,
+    "group": 73,
+    "failed": [
+      "n09",
+      "n15",
+      "n18",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 589,
+    "group": 73,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 590,
+    "group": 73,
+    "failed": [
+      "n00",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 591,
+    "group": 73,
+    "failed": [
+      "n10",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 592,
+    "group": 74,
+    "failed": [
+      "n00"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 593,
+    "group": 74,
+    "failed": [
+      "n02",
+      "n07",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 594,
+    "group": 74,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 595,
+    "group": 74,
+    "failed": [
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 596,
+    "group": 74,
+    "failed": [
+      "n01",
+      "n03",
+      "n13",
+      "n17",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 597,
+    "group": 74,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 598,
+    "group": 74,
+    "failed": [
+      "n10",
+      "n20",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 599,
+    "group": 74,
+    "failed": [
+      "n11",
+      "n13",
+      "n17",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 600,
+    "group": 75,
+    "failed": [
+      "n10",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 601,
+    "group": 75,
+    "failed": [
+      "n15",
+      "n18",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 602,
+    "group": 75,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 603,
+    "group": 75,
+    "failed": [
+      "n01",
+      "n05",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 604,
+    "group": 75,
+    "failed": [
+      "n03",
+      "n09",
+      "n23",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 605,
+    "group": 75,
+    "failed": [
+      "n01",
+      "n11",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 606,
+    "group": 75,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 607,
+    "group": 75,
+    "failed": [
+      "n20",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 608,
+    "group": 76,
+    "failed": [
+      "n09",
+      "n10",
+      "n11",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 609,
+    "group": 76,
+    "failed": [
+      "n04"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 610,
+    "group": 76,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 611,
+    "group": 76,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 612,
+    "group": 76,
+    "failed": [
+      "n04"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 613,
+    "group": 76,
+    "failed": [
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 614,
+    "group": 76,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 615,
+    "group": 76,
+    "failed": [
+      "n05",
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 616,
+    "group": 77,
+    "failed": [
+      "n02",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 617,
+    "group": 77,
+    "failed": [
+      "n09",
+      "n10",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 618,
+    "group": 77,
+    "failed": [
+      "n06",
+      "n17",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 619,
+    "group": 77,
+    "failed": [
+      "n04",
+      "n14",
+      "n16",
+      "n22",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 620,
+    "group": 77,
+    "failed": [
+      "n10",
+      "n16",
+      "n18",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 621,
+    "group": 77,
+    "failed": [
+      "n08",
+      "n10",
+      "n14",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 622,
+    "group": 77,
+    "failed": [
+      "n09",
+      "n18",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 623,
+    "group": 77,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 624,
+    "group": 78,
+    "failed": [
+      "n03",
+      "n10",
+      "n14",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 625,
+    "group": 78,
+    "failed": [
+      "n07",
+      "n08",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 626,
+    "group": 78,
+    "failed": [
+      "n07",
+      "n08",
+      "n13",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 627,
+    "group": 78,
+    "failed": [
+      "n06",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 628,
+    "group": 78,
+    "failed": [
+      "n07",
+      "n10",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 629,
+    "group": 78,
+    "failed": [
+      "n00",
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 630,
+    "group": 78,
+    "failed": [
+      "n00",
+      "n19",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 631,
+    "group": 78,
+    "failed": [
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 632,
+    "group": 79,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 633,
+    "group": 79,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 634,
+    "group": 79,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 635,
+    "group": 79,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 636,
+    "group": 79,
+    "failed": [
+      "n10",
+      "n15",
+      "n17",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 637,
+    "group": 79,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 638,
+    "group": 79,
+    "failed": [
+      "n00",
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 639,
+    "group": 79,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 640,
+    "group": 80,
+    "failed": [
+      "n07",
+      "n09",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 641,
+    "group": 80,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 642,
+    "group": 80,
+    "failed": [
+      "n04",
+      "n06",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 643,
+    "group": 80,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 644,
+    "group": 80,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 645,
+    "group": 80,
+    "failed": [
+      "n03",
+      "n07",
+      "n11"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 646,
+    "group": 80,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 647,
+    "group": 80,
+    "failed": [
+      "n12",
+      "n18",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 648,
+    "group": 81,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 649,
+    "group": 81,
+    "failed": [
+      "n04",
+      "n08",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 650,
+    "group": 81,
+    "failed": [
+      "n04",
+      "n06"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 651,
+    "group": 81,
+    "failed": [
+      "n02",
+      "n08",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 652,
+    "group": 81,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 653,
+    "group": 81,
+    "failed": [
+      "n13",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 654,
+    "group": 81,
+    "failed": [
+      "n00"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 655,
+    "group": 81,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 656,
+    "group": 82,
+    "failed": [
+      "n05",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 657,
+    "group": 82,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 658,
+    "group": 82,
+    "failed": [
+      "n10",
+      "n15",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 659,
+    "group": 82,
+    "failed": [
+      "n01",
+      "n12",
+      "n18",
+      "n21",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 660,
+    "group": 82,
+    "failed": [
+      "n04",
+      "n05",
+      "n07",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 661,
+    "group": 82,
+    "failed": [
+      "n00",
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 662,
+    "group": 82,
+    "failed": [
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 663,
+    "group": 82,
+    "failed": [
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 664,
+    "group": 83,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 665,
+    "group": 83,
+    "failed": [
+      "n09",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 666,
+    "group": 83,
+    "failed": [
+      "n03",
+      "n06",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 667,
+    "group": 83,
+    "failed": [
+      "n06",
+      "n16",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 668,
+    "group": 83,
+    "failed": [
+      "n10",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 669,
+    "group": 83,
+    "failed": [
+      "n02",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 670,
+    "group": 83,
+    "failed": [
+      "n14",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 671,
+    "group": 83,
+    "failed": [
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 672,
+    "group": 84,
+    "failed": [
+      "n00",
+      "n09",
+      "n16",
+      "n17",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 673,
+    "group": 84,
+    "failed": [
+      "n18",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 674,
+    "group": 84,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 675,
+    "group": 84,
+    "failed": [
+      "n00",
+      "n20",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 676,
+    "group": 84,
+    "failed": [
+      "n14",
+      "n22",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 677,
+    "group": 84,
+    "failed": [
+      "n13",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 678,
+    "group": 84,
+    "failed": [
+      "n01",
+      "n12",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 679,
+    "group": 84,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 680,
+    "group": 85,
+    "failed": [
+      "n12",
+      "n20",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 681,
+    "group": 85,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 682,
+    "group": 85,
+    "failed": [
+      "n00",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 683,
+    "group": 85,
+    "failed": [
+      "n09",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 684,
+    "group": 85,
+    "failed": [
+      "n03",
+      "n12",
+      "n25"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 685,
+    "group": 85,
+    "failed": [
+      "n00",
+      "n12",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 686,
+    "group": 85,
+    "failed": [
+      "n00",
+      "n07",
+      "n09",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 687,
+    "group": 85,
+    "failed": [
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 688,
+    "group": 86,
+    "failed": [
+      "n10",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 689,
+    "group": 86,
+    "failed": [
+      "n13",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 690,
+    "group": 86,
+    "failed": [
+      "n06",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 691,
+    "group": 86,
+    "failed": [
+      "n04",
+      "n16",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 692,
+    "group": 86,
+    "failed": [
+      "n06"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 693,
+    "group": 86,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 694,
+    "group": 86,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 695,
+    "group": 86,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 696,
+    "group": 87,
+    "failed": [
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 697,
+    "group": 87,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 698,
+    "group": 87,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 699,
+    "group": 87,
+    "failed": [
+      "n02",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 700,
+    "group": 87,
+    "failed": [
+      "n03"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 701,
+    "group": 87,
+    "failed": [
+      "n03"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 702,
+    "group": 87,
+    "failed": [
+      "n10",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 703,
+    "group": 87,
+    "failed": [
+      "n06",
+      "n09",
+      "n14",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 704,
+    "group": 88,
+    "failed": [
+      "n03",
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 705,
+    "group": 88,
+    "failed": [
+      "n02",
+      "n08",
+      "n10",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 706,
+    "group": 88,
+    "failed": [
+      "n07"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 707,
+    "group": 88,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 708,
+    "group": 88,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 709,
+    "group": 88,
+    "failed": [
+      "n05",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 710,
+    "group": 88,
+    "failed": [
+      "n01",
+      "n05"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 711,
+    "group": 88,
+    "failed": [
+      "n03"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 712,
+    "group": 89,
+    "failed": [
+      "n02",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 713,
+    "group": 89,
+    "failed": [
+      "n00",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 714,
+    "group": 89,
+    "failed": [
+      "n04",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 715,
+    "group": 89,
+    "failed": [
+      "n15",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 716,
+    "group": 89,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 717,
+    "group": 89,
+    "failed": [
+      "n06",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 718,
+    "group": 89,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 719,
+    "group": 89,
+    "failed": [
+      "n02",
+      "n04",
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 720,
+    "group": 90,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 721,
+    "group": 90,
+    "failed": [
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 722,
+    "group": 90,
+    "failed": [
+      "n08",
+      "n11",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 723,
+    "group": 90,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 724,
+    "group": 90,
+    "failed": [
+      "n03",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 725,
+    "group": 90,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 726,
+    "group": 90,
+    "failed": [
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 727,
+    "group": 90,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 728,
+    "group": 91,
+    "failed": [
+      "n00",
+      "n19",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 729,
+    "group": 91,
+    "failed": [
+      "n02",
+      "n08",
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 730,
+    "group": 91,
+    "failed": [
+      "n07"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 731,
+    "group": 91,
+    "failed": [
+      "n00",
+      "n01",
+      "n05",
+      "n13"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 732,
+    "group": 91,
+    "failed": [
+      "n03",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 733,
+    "group": 91,
+    "failed": [
+      "n02",
+      "n05",
+      "n14",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 734,
+    "group": 91,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 735,
+    "group": 91,
+    "failed": [
+      "n08",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 736,
+    "group": 92,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 737,
+    "group": 92,
+    "failed": [
+      "n02"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 738,
+    "group": 92,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 739,
+    "group": 92,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 740,
+    "group": 92,
+    "failed": [
+      "n02",
+      "n05",
+      "n06"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 741,
+    "group": 92,
+    "failed": [
+      "n05",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 742,
+    "group": 92,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 743,
+    "group": 92,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 744,
+    "group": 93,
+    "failed": [
+      "n20",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 745,
+    "group": 93,
+    "failed": [
+      "n01",
+      "n05",
+      "n10",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 746,
+    "group": 93,
+    "failed": [
+      "n11",
+      "n20",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 747,
+    "group": 93,
+    "failed": [
+      "n11",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 748,
+    "group": 93,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 749,
+    "group": 93,
+    "failed": [
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 750,
+    "group": 93,
+    "failed": [
+      "n05",
+      "n06",
+      "n12",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 751,
+    "group": 93,
+    "failed": [
+      "n02",
+      "n20",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 752,
+    "group": 94,
+    "failed": [
+      "n01",
+      "n02",
+      "n04",
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 753,
+    "group": 94,
+    "failed": [
+      "n09",
+      "n11",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 754,
+    "group": 94,
+    "failed": [
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 755,
+    "group": 94,
+    "failed": [
+      "n12",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 756,
+    "group": 94,
+    "failed": [
+      "n04",
+      "n10",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 757,
+    "group": 94,
+    "failed": [
+      "n04",
+      "n27"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 758,
+    "group": 94,
+    "failed": [
+      "n07",
+      "n23",
+      "n25",
+      "n29"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 759,
+    "group": 94,
+    "failed": [
+      "n12",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 760,
+    "group": 95,
+    "failed": [
+      "n18",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 761,
+    "group": 95,
+    "failed": [
+      "n07",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 762,
+    "group": 95,
+    "failed": [
+      "n00",
+      "n03"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 763,
+    "group": 95,
+    "failed": [
+      "n09",
+      "n13",
+      "n20",
+      "n23",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 764,
+    "group": 95,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 765,
+    "group": 95,
+    "failed": [
+      "n08",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 766,
+    "group": 95,
+    "failed": [
+      "n04",
+      "n05"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 767,
+    "group": 95,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 768,
+    "group": 96,
+    "failed": [
+      "n01",
+      "n06",
+      "n09",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 769,
+    "group": 96,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 770,
+    "group": 96,
+    "failed": [
+      "n06",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 771,
+    "group": 96,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 772,
+    "group": 96,
+    "failed": [
+      "n13",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 773,
+    "group": 96,
+    "failed": [
+      "n08",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 774,
+    "group": 96,
+    "failed": [
+      "n09",
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 775,
+    "group": 96,
+    "failed": [
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 776,
+    "group": 97,
+    "failed": [
+      "n01",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 777,
+    "group": 97,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 778,
+    "group": 97,
+    "failed": [
+      "n11",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 779,
+    "group": 97,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 780,
+    "group": 97,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 781,
+    "group": 97,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 782,
+    "group": 97,
+    "failed": [
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 783,
+    "group": 97,
+    "failed": [
+      "n02",
+      "n04"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 784,
+    "group": 98,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 785,
+    "group": 98,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 786,
+    "group": 98,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 787,
+    "group": 98,
+    "failed": [
+      "n03",
+      "n07",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 788,
+    "group": 98,
+    "failed": [
+      "n01",
+      "n07",
+      "n14",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 789,
+    "group": 98,
+    "failed": [
+      "n10",
+      "n13",
+      "n16",
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 790,
+    "group": 98,
+    "failed": [
+      "n01"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 791,
+    "group": 98,
+    "failed": [
+      "n10",
+      "n14",
+      "n18",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 792,
+    "group": 99,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 793,
+    "group": 99,
+    "failed": [
+      "n06",
+      "n07",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 794,
+    "group": 99,
+    "failed": [
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 795,
+    "group": 99,
+    "failed": [
+      "n06",
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 796,
+    "group": 99,
+    "failed": [
+      "n00",
+      "n06",
+      "n12",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 797,
+    "group": 99,
+    "failed": [
+      "n04"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 798,
+    "group": 99,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 799,
+    "group": 99,
+    "failed": [
+      "n01",
+      "n16",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 800,
+    "group": 100,
+    "failed": [
+      "n03",
+      "n06",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 801,
+    "group": 100,
+    "failed": [
+      "n08",
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 802,
+    "group": 100,
+    "failed": [
+      "n00",
+      "n06"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 803,
+    "group": 100,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 804,
+    "group": 100,
+    "failed": [
+      "n09",
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 805,
+    "group": 100,
+    "failed": [
+      "n02",
+      "n07",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 806,
+    "group": 100,
+    "failed": [
+      "n02",
+      "n09",
+      "n15",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 807,
+    "group": 100,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 808,
+    "group": 101,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 809,
+    "group": 101,
+    "failed": [
+      "n00",
+      "n11",
+      "n19",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 810,
+    "group": 101,
+    "failed": [
+      "n03",
+      "n10",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 811,
+    "group": 101,
+    "failed": [
+      "n02",
+      "n03"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 812,
+    "group": 101,
+    "failed": [
+      "n16",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 813,
+    "group": 101,
+    "failed": [
+      "n00",
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 814,
+    "group": 101,
+    "failed": [
+      "n02",
+      "n03"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 815,
+    "group": 101,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 816,
+    "group": 102,
+    "failed": [
+      "n24",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 817,
+    "group": 102,
+    "failed": [
+      "n05",
+      "n08",
+      "n10",
+      "n12",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 818,
+    "group": 102,
+    "failed": [
+      "n09",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 819,
+    "group": 102,
+    "failed": [
+      "n06"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 820,
+    "group": 102,
+    "failed": [
+      "n04",
+      "n13",
+      "n22",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 821,
+    "group": 102,
+    "failed": [
+      "n07",
+      "n15",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 822,
+    "group": 102,
+    "failed": [
+      "n16",
+      "n25",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 823,
+    "group": 102,
+    "failed": [
+      "n10",
+      "n25",
+      "n26",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 824,
+    "group": 103,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 825,
+    "group": 103,
+    "failed": [
+      "n04",
+      "n06",
+      "n07",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 826,
+    "group": 103,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 827,
+    "group": 103,
+    "failed": [
+      "n04",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 828,
+    "group": 103,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 829,
+    "group": 103,
+    "failed": [
+      "n08",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 830,
+    "group": 103,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 831,
+    "group": 103,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 832,
+    "group": 104,
+    "failed": [
+      "n00",
+      "n08",
+      "n12",
+      "n16",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 833,
+    "group": 104,
+    "failed": [
+      "n17",
+      "n22",
+      "n23",
+      "n28"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 834,
+    "group": 104,
+    "failed": [
+      "n20",
+      "n28"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 835,
+    "group": 104,
+    "failed": [
+      "n03",
+      "n15",
+      "n17"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 836,
+    "group": 104,
+    "failed": [
+      "n11",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 837,
+    "group": 104,
+    "failed": [
+      "n00",
+      "n07",
+      "n09"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 838,
+    "group": 104,
+    "failed": [
+      "n10",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 839,
+    "group": 104,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 840,
+    "group": 105,
+    "failed": [
+      "n19",
+      "n20"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 841,
+    "group": 105,
+    "failed": [
+      "n02",
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 842,
+    "group": 105,
+    "failed": [
+      "n13",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 843,
+    "group": 105,
+    "failed": [
+      "n12",
+      "n15",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 844,
+    "group": 105,
+    "failed": [
+      "n10",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 845,
+    "group": 105,
+    "failed": [
+      "n04",
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 846,
+    "group": 105,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 847,
+    "group": 105,
+    "failed": [
+      "n14",
+      "n17",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 848,
+    "group": 106,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 849,
+    "group": 106,
+    "failed": [
+      "n21",
+      "n22",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 850,
+    "group": 106,
+    "failed": [
+      "n03",
+      "n05",
+      "n16",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 851,
+    "group": 106,
+    "failed": [
+      "n10",
+      "n11",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 852,
+    "group": 106,
+    "failed": [
+      "n10",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 853,
+    "group": 106,
+    "failed": [
+      "n24",
+      "n28"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 854,
+    "group": 106,
+    "failed": [
+      "n07",
+      "n10",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 855,
+    "group": 106,
+    "failed": [
+      "n09",
+      "n12",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 856,
+    "group": 107,
+    "failed": [
+      "n07",
+      "n10",
+      "n17",
+      "n21",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 857,
+    "group": 107,
+    "failed": [
+      "n08",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 858,
+    "group": 107,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 859,
+    "group": 107,
+    "failed": [
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 860,
+    "group": 107,
+    "failed": [
+      "n01",
+      "n05",
+      "n08",
+      "n21"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 861,
+    "group": 107,
+    "failed": [
+      "n14",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 862,
+    "group": 107,
+    "failed": [
+      "n06"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 863,
+    "group": 107,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 864,
+    "group": 108,
+    "failed": [
+      "n03",
+      "n05",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 865,
+    "group": 108,
+    "failed": [
+      "n16",
+      "n19",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 866,
+    "group": 108,
+    "failed": [
+      "n00",
+      "n13",
+      "n17",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 867,
+    "group": 108,
+    "failed": [
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 868,
+    "group": 108,
+    "failed": [
+      "n01",
+      "n03",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 869,
+    "group": 108,
+    "failed": [
+      "n07",
+      "n08"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 870,
+    "group": 108,
+    "failed": [
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 871,
+    "group": 108,
+    "failed": [
+      "n03",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 872,
+    "group": 109,
+    "failed": [
+      "n01"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 873,
+    "group": 109,
+    "failed": [
+      "n05",
+      "n08",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 874,
+    "group": 109,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 875,
+    "group": 109,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 876,
+    "group": 109,
+    "failed": [
+      "n04",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 877,
+    "group": 109,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 878,
+    "group": 109,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 879,
+    "group": 109,
+    "failed": [
+      "n07",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 880,
+    "group": 110,
+    "failed": [
+      "n14",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 881,
+    "group": 110,
+    "failed": [
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 882,
+    "group": 110,
+    "failed": [
+      "n08",
+      "n12"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 883,
+    "group": 110,
+    "failed": [
+      "n02",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 884,
+    "group": 110,
+    "failed": [
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 885,
+    "group": 110,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 886,
+    "group": 110,
+    "failed": [
+      "n06",
+      "n19",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 887,
+    "group": 110,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 888,
+    "group": 111,
+    "failed": [
+      "n08",
+      "n24",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 889,
+    "group": 111,
+    "failed": [
+      "n01",
+      "n04",
+      "n05",
+      "n08",
+      "n24",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 890,
+    "group": 111,
+    "failed": [
+      "n00",
+      "n14",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 891,
+    "group": 111,
+    "failed": [
+      "n00",
+      "n12",
+      "n15",
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 892,
+    "group": 111,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 893,
+    "group": 111,
+    "failed": [
+      "n18",
+      "n22",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 894,
+    "group": 111,
+    "failed": [
+      "n00",
+      "n11",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 895,
+    "group": 111,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 896,
+    "group": 112,
+    "failed": [
+      "n05",
+      "n10",
+      "n14"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 897,
+    "group": 112,
+    "failed": [
+      "n01",
+      "n03",
+      "n07",
+      "n21",
+      "n22",
+      "n26"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 898,
+    "group": 112,
+    "failed": [
+      "n19",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 899,
+    "group": 112,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 900,
+    "group": 112,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 901,
+    "group": 112,
+    "failed": [
+      "n00",
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 902,
+    "group": 112,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 903,
+    "group": 112,
+    "failed": [
+      "n06",
+      "n13",
+      "n20",
+      "n22"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 904,
+    "group": 113,
+    "failed": [
+      "n11"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 905,
+    "group": 113,
+    "failed": [
+      "n27"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 906,
+    "group": 113,
+    "failed": [
+      "n02",
+      "n03",
+      "n11",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 907,
+    "group": 113,
+    "failed": [
+      "n00"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 908,
+    "group": 113,
+    "failed": [
+      "n04",
+      "n09",
+      "n15",
+      "n17",
+      "n25"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 909,
+    "group": 113,
+    "failed": [
+      "n06",
+      "n07",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 910,
+    "group": 113,
+    "failed": [
+      "n01",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 911,
+    "group": 113,
+    "failed": [
+      "n02",
+      "n15"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 912,
+    "group": 114,
+    "failed": [
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 913,
+    "group": 114,
+    "failed": [
+      "n15",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 914,
+    "group": 114,
+    "failed": [
+      "n09"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 915,
+    "group": 114,
+    "failed": [
+      "n10",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 916,
+    "group": 114,
+    "failed": [
+      "n02",
+      "n07"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 917,
+    "group": 114,
+    "failed": [
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 918,
+    "group": 114,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 919,
+    "group": 114,
+    "failed": [
+      "n08",
+      "n21",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 920,
+    "group": 115,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 921,
+    "group": 115,
+    "failed": [
+      "n10",
+      "n15",
+      "n22",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 922,
+    "group": 115,
+    "failed": [
+      "n02",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 923,
+    "group": 115,
+    "failed": [
+      "n03",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 924,
+    "group": 115,
+    "failed": [
+      "n14",
+      "n20"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 925,
+    "group": 115,
+    "failed": [
+      "n06",
+      "n15"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 926,
+    "group": 115,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 927,
+    "group": 115,
+    "failed": [
+      "n04",
+      "n13",
+      "n16",
+      "n24"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 928,
+    "group": 116,
+    "failed": [
+      "n04",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 929,
+    "group": 116,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 930,
+    "group": 116,
+    "failed": [
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 931,
+    "group": 116,
+    "failed": [
+      "n04",
+      "n10",
+      "n16"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 932,
+    "group": 116,
+    "failed": [
+      "n06",
+      "n10",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 933,
+    "group": 116,
+    "failed": [
+      "n00",
+      "n09",
+      "n11",
+      "n13",
+      "n14"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 934,
+    "group": 116,
+    "failed": [],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 935,
+    "group": 116,
+    "failed": [
+      "n08",
+      "n21",
+      "n22"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 936,
+    "group": 117,
+    "failed": [
+      "n06",
+      "n07",
+      "n08",
+      "n13",
+      "n19"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 937,
+    "group": 117,
+    "failed": [
+      "n12",
+      "n13"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 938,
+    "group": 117,
+    "failed": [
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 939,
+    "group": 117,
+    "failed": [
+      "n05",
+      "n14",
+      "n16"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 940,
+    "group": 117,
+    "failed": [
+      "n05",
+      "n19"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 941,
+    "group": 117,
+    "failed": [
+      "n00"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 942,
+    "group": 117,
+    "failed": [
+      "n05"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 943,
+    "group": 117,
+    "failed": [
+      "n10"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 944,
+    "group": 118,
+    "failed": [
+      "n09",
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 945,
+    "group": 118,
+    "failed": [
+      "n08",
+      "n19",
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 946,
+    "group": 118,
+    "failed": [
+      "n26"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 947,
+    "group": 118,
+    "failed": [
+      "n03",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 948,
+    "group": 118,
+    "failed": [
+      "n01",
+      "n03",
+      "n05",
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 949,
+    "group": 118,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 950,
+    "group": 118,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 951,
+    "group": 118,
+    "failed": [
+      "n14",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 952,
+    "group": 119,
+    "failed": [
+      "n04",
+      "n12"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 953,
+    "group": 119,
+    "failed": [
+      "n18"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 954,
+    "group": 119,
+    "failed": [
+      "n20",
+      "n24"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 955,
+    "group": 119,
+    "failed": [
+      "n05",
+      "n07",
+      "n21"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 956,
+    "group": 119,
+    "failed": [
+      "n17"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 957,
+    "group": 119,
+    "failed": [
+      "n12",
+      "n19",
+      "n21",
+      "n23"
+    ],
+    "critical_down": 1
+  },
+  {
+    "sample_id": 958,
+    "group": 119,
+    "failed": [
+      "n23"
+    ],
+    "critical_down": 0
+  },
+  {
+    "sample_id": 959,
+    "group": 119,
+    "failed": [
+      "n02",
+      "n10",
+      "n15",
+      "n20"
+    ],
+    "critical_down": 0
+  }
+]

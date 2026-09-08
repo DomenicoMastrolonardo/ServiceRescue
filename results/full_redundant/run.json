@@ -1,0 +1,225 @@
+{
+  "status": "complete",
+  "profile": "full",
+  "seed": 73,
+  "groups": 120,
+  "snapshots": 8,
+  "outer": 5,
+  "inner": 3,
+  "repeats": 2,
+  "planning_cases": 60,
+  "scenario": "redundant",
+  "scenario_parameters": {
+    "min_nodes": 10,
+    "max_nodes": 18,
+    "replica_probability": 0.8,
+    "extra_dependency_probability": 0.15
+  },
+  "samples": 960,
+  "prevalence": 0.21145833333333333,
+  "python": "3.12.3",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "sklearn": "1.7.2",
+  "seconds": 124.76874104099988,
+  "feature_sets": {
+    "BASE": [
+      "root_cpu",
+      "root_errors",
+      "root_latency",
+      "n_nodes",
+      "n_requires",
+      "n_replicas"
+    ],
+    "BASE+LOCAL": [
+      "root_cpu",
+      "root_errors",
+      "root_latency",
+      "n_nodes",
+      "n_requires",
+      "n_replicas",
+      "mean_cpu",
+      "max_cpu",
+      "mean_errors",
+      "max_errors",
+      "alarm_fraction"
+    ],
+    "BASE+KB": [
+      "root_cpu",
+      "root_errors",
+      "root_latency",
+      "n_nodes",
+      "n_requires",
+      "n_replicas",
+      "mean_cpu",
+      "max_cpu",
+      "mean_errors",
+      "max_errors",
+      "alarm_fraction",
+      "root_down",
+      "down_fraction",
+      "reachable_fraction",
+      "exposed_fraction",
+      "reachable_down_fraction",
+      "degraded_fraction"
+    ]
+  },
+  "models": [
+    "LogisticRegression",
+    "RandomForest",
+    "GradientBoosting"
+  ],
+  "baselines": [
+    "DummyPrior",
+    "LogicOnly"
+  ],
+  "prolog": {
+    "engine": "SWI-Prolog version 9.0.4 for x86_64-linux",
+    "seconds": 1.4693682549996083,
+    "snapshots": 960,
+    "all_predicates_agreement": 960
+  },
+  "bayesian": {
+    "model": "BayesianNetwork",
+    "n_folds": 10,
+    "f1_macro_mean": 0.4406748309538414,
+    "f1_macro_std": 0.010595215256761438,
+    "balanced_accuracy_mean": 0.5,
+    "balanced_accuracy_std": 0.0,
+    "average_precision_mean": 0.2919214888897983,
+    "average_precision_std": 0.04622658224648701,
+    "brier_mean": 0.15933300170100356,
+    "brier_std": 0.020122496060653465,
+    "edges_mean": 5.0,
+    "edges_std": 0.0
+  },
+  "monitoring": {
+    "snapshots": 960,
+    "node_observations": 14040,
+    "n_folds": 10,
+    "sha256": {
+      "monitoring_folds.csv": "1a7018e8da8a0c3d7176d3ce087093ab53acade74bc65e917db5e5c83527b2aa",
+      "monitoring_models.json": "475ef97848044f2af4628f567aa4661cb9f7036f2e35ddaeb23bce44bcadc867",
+      "monitoring_nominal.csv": "ea192365aaf60a15041d30c8bd1fb824c4c4b430168958215d456083c511db93",
+      "monitoring_observed.csv": "e54332949da0f0113f6efb9559ecd6634e2543684460f15220bfa623bcb3ea4d",
+      "monitoring_predictions.csv": "4b4eb56649cbdc9f41e22ae474d03f2b9ba5fbbc5139a56bfc99b2e2a6144709",
+      "monitoring_summary.csv": "56eacbdee689f1acd465dc88516df42474fda7adb50808c2f093296938d90c7b",
+      "monitoring_truth.json": "97941aa76c5ac0d2fec8bb6cf25c2726fe4de9ce8e51c1dfcc01518cb3b2340f"
+    },
+    "features": [
+      "cpu",
+      "errors",
+      "latency"
+    ],
+    "methods": [
+      "FixedThreshold",
+      "SingleCenter",
+      "KMeans"
+    ],
+    "summary": [
+      {
+        "method": "FixedThreshold",
+        "n_folds": 10,
+        "local_f1_mean": 0.4869739181693385,
+        "local_f1_std": 0.06231867767072269,
+        "local_false_alarm_rate_mean": 0.0008621224136144233,
+        "local_false_alarm_rate_std": 0.0007405941657707657,
+        "critical_f1_macro_mean": 0.7380318385861543,
+        "critical_f1_macro_std": 0.024979706153960682,
+        "critical_balanced_accuracy_mean": 0.6781767455148463,
+        "critical_balanced_accuracy_std": 0.024706279681534438
+      },
+      {
+        "method": "SingleCenter",
+        "n_folds": 10,
+        "local_f1_mean": 0.7771221384751319,
+        "local_f1_std": 0.022531724734536584,
+        "local_false_alarm_rate_mean": 0.05282142039263017,
+        "local_false_alarm_rate_std": 0.008274190832370782,
+        "critical_f1_macro_mean": 0.8629021259695261,
+        "critical_f1_macro_std": 0.032077473387685004,
+        "critical_balanced_accuracy_mean": 0.9555899973922367,
+        "critical_balanced_accuracy_std": 0.016201736361184157
+      },
+      {
+        "method": "KMeans",
+        "n_folds": 10,
+        "local_f1_mean": 0.7882627542567564,
+        "local_f1_std": 0.01628298839389947,
+        "local_false_alarm_rate_mean": 0.04920706637162676,
+        "local_false_alarm_rate_std": 0.004361404545267922,
+        "critical_f1_macro_mean": 0.8779143742354011,
+        "critical_f1_macro_std": 0.031891182505727235,
+        "critical_balanced_accuracy_mean": 0.9609252721583219,
+        "critical_balanced_accuracy_std": 0.015676932940230946
+      }
+    ]
+  },
+  "parameter_grids": {
+    "LogisticRegression": {
+      "clf__C": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "clf__class_weight": [
+        null,
+        "balanced"
+      ]
+    },
+    "RandomForest": {
+      "clf__max_depth": [
+        4,
+        null
+      ],
+      "clf__min_samples_leaf": [
+        3,
+        10
+      ]
+    },
+    "GradientBoosting": {
+      "clf__max_depth": [
+        1,
+        2
+      ],
+      "clf__learning_rate": [
+        0.05,
+        0.1
+      ]
+    }
+  },
+  "sha256": {
+    "kb/kb.pl": "42d8c058da2022413b5c78714acf9c3b26276249c9f7907e275158aeab37d86a",
+    "kb/rules.json": "eca37629720221012ca28a8056aa4ae847368fca9650c5737e5952ac2fcc0125",
+    "main.py": "6c12e88e918ed0ccbb61ab582e32e887e770d9000c15d75d7fbd84c09138d793",
+    "requirements.txt": "355088c67c7b7a26614e765ff46568fc0793e2b6d80b467ff62ab6f782c4356e",
+    "src/bayesianNetwork.py": "3d08d72944512ee4d5e8567b4417f8cdc72a473a421d070b7b3302d570abdc70",
+    "src/extraAnalysis.py": "5e24f5eab9d9d61e9bef581c8d99d39888487434f1078501a41b3686cdf4354b",
+    "src/main.py": "360a6d5dd3ef176896d4e801b3767f63a547d1f363b2884ba39bbb4aabb6c959",
+    "src/serviceProlog.py": "e1b0725e58649e3b53653494295eb03e2cfb2a7a1895d03f7e91a8121b41f011",
+    "src/servicerescue/__init__.py": "5f96a467cb034f6c02d4717ab920e91b76d60beabcfb9f6f4c3f54366de70bc4",
+    "src/servicerescue/analysis.py": "e92404face1bb505188161346f2c64f7f364fa3b5be93078e7bf767d1b16e99f",
+    "src/servicerescue/bayesian.py": "b0cfdb2748c6d92928dac5387b04fdda49d4ae16b37cdc734a48e4c856eb7209",
+    "src/servicerescue/cli.py": "662826c003f12478820a2cd061f1ad39bc7ee6aeb453b077e48a43531fe84563",
+    "src/servicerescue/domain.py": "a98df311edd722c4070abf6a8929d2b8aaf34b95044e43ff3b967a81a281b876",
+    "src/servicerescue/experiments.py": "ad2664fae7a465f7fd436eb1f278f34d753d35b7dabfab432bdd871cee9851d4",
+    "src/servicerescue/features.py": "41e393702e52b74d42157a78ad0039bed230bb19983e7995a90cab99d058f60b",
+    "src/servicerescue/layout.py": "d9fed3922dad813c30dded4c8809873a67bce2affcaae98dfc72da0e4478a80c",
+    "src/servicerescue/logic.py": "c5c6bd14426aa935f91ab806552608b2eb561f0b041f7d6a171178ce34c9b52c",
+    "src/servicerescue/planning.py": "079e277fbb4a0655226b0d07c2d1d5017f8264ce994cac9b26e0f05ba8e71d2c",
+    "src/servicerescue/prolog.py": "9de4adda7a98b416ed9b6ff40f01a553b92832a34d0aaafea79264feb1a189f9",
+    "src/servicerescue/report.py": "9660802d3eb437379af0475df5c28a8d254a0c26443e2eb9620608c8a6ee35fb",
+    "src/servicerescue/unsupervised.py": "e7d6cc91e384b8d9ec8fa304d9a3696f51d9b3e26f940df074fbc7e762131e8d",
+    "src/supervisedLearning.py": "49354264df96737676dd60c4ce756ef9cead968aaa7a40e02ccf5fe4d4043886",
+    "src/unsupervisedLearning.py": "5cc951bd123652f5603d7152830c568bd58a6eff54ce8ffc67f0e303eb2c66e0"
+  },
+  "dataset_sha256": "7094d8ccfbf7ea72520a2457c25489cc95010193c4fe7b6f70ddb0b447a1f6b0",
+  "source_hash_refresh": {
+    "reason": "Aggiornamento dopo modifiche esclusivamente a commenti e docstring; codice eseguibile verificato equivalente tramite AST.",
+    "previous_sha256": {
+      "src/main.py": "8edf42553989ed02bdcb766163a2904041699de00a931df490903e9c76683b50",
+      "src/servicerescue/layout.py": "1bb1bac81097569c55b0fd5ac72148c75219a202dfa2eec4478cce410cf5621e"
+    }
+  }
+}

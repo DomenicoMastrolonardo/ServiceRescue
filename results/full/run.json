@@ -1,0 +1,225 @@
+{
+  "status": "complete",
+  "profile": "full",
+  "seed": 42,
+  "groups": 120,
+  "snapshots": 8,
+  "outer": 5,
+  "inner": 3,
+  "repeats": 2,
+  "planning_cases": 60,
+  "scenario": "standard",
+  "scenario_parameters": {
+    "min_nodes": 10,
+    "max_nodes": 18,
+    "replica_probability": 0.45,
+    "extra_dependency_probability": 0.35
+  },
+  "samples": 960,
+  "prevalence": 0.3302083333333333,
+  "python": "3.12.3",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "sklearn": "1.7.2",
+  "seconds": 123.53804542600028,
+  "feature_sets": {
+    "BASE": [
+      "root_cpu",
+      "root_errors",
+      "root_latency",
+      "n_nodes",
+      "n_requires",
+      "n_replicas"
+    ],
+    "BASE+LOCAL": [
+      "root_cpu",
+      "root_errors",
+      "root_latency",
+      "n_nodes",
+      "n_requires",
+      "n_replicas",
+      "mean_cpu",
+      "max_cpu",
+      "mean_errors",
+      "max_errors",
+      "alarm_fraction"
+    ],
+    "BASE+KB": [
+      "root_cpu",
+      "root_errors",
+      "root_latency",
+      "n_nodes",
+      "n_requires",
+      "n_replicas",
+      "mean_cpu",
+      "max_cpu",
+      "mean_errors",
+      "max_errors",
+      "alarm_fraction",
+      "root_down",
+      "down_fraction",
+      "reachable_fraction",
+      "exposed_fraction",
+      "reachable_down_fraction",
+      "degraded_fraction"
+    ]
+  },
+  "models": [
+    "LogisticRegression",
+    "RandomForest",
+    "GradientBoosting"
+  ],
+  "baselines": [
+    "DummyPrior",
+    "LogicOnly"
+  ],
+  "prolog": {
+    "engine": "SWI-Prolog version 9.0.4 for x86_64-linux",
+    "seconds": 1.6087481459999253,
+    "snapshots": 960,
+    "all_predicates_agreement": 960
+  },
+  "bayesian": {
+    "model": "BayesianNetwork",
+    "n_folds": 10,
+    "f1_macro_mean": 0.4008192601358155,
+    "f1_macro_std": 0.012034391413962673,
+    "balanced_accuracy_mean": 0.5,
+    "balanced_accuracy_std": 0.0,
+    "average_precision_mean": 0.4159714747845441,
+    "average_precision_std": 0.047122143941916245,
+    "brier_mean": 0.21564318178038738,
+    "brier_std": 0.015493258472248436,
+    "edges_mean": 8.5,
+    "edges_std": 1.2692955176439846
+  },
+  "monitoring": {
+    "snapshots": 960,
+    "node_observations": 13432,
+    "n_folds": 10,
+    "sha256": {
+      "monitoring_folds.csv": "d925e8554ef995748f82d7324a4676f3ee3264d620ecf60c369f4922fd2c5ddf",
+      "monitoring_models.json": "9752a4dbf8cfb4c2c9641e1db43db786f55a3ed6c0213decaeb74d3c99f25a72",
+      "monitoring_nominal.csv": "8cf2b208ecde74afb1da07c3bc9353c4e5fbe872193838dd3854264401e15ca3",
+      "monitoring_observed.csv": "8aabbc14187ef731280a99b28184d99de54d587f3943d90d0fa2f4dff3e2c0c3",
+      "monitoring_predictions.csv": "c16bfab41bdcc89e0dc814e94838338b35928a3dbd85fb6389411a50fd581da8",
+      "monitoring_summary.csv": "e5a7d6cb73f3729679154309f45db01c21131fd3188fa7335a9335390f47b370",
+      "monitoring_truth.json": "69ab5cf968de9cf7b5a6860f61b6caf85620fcacd960b89c1a1cb2fccd9ff747"
+    },
+    "features": [
+      "cpu",
+      "errors",
+      "latency"
+    ],
+    "methods": [
+      "FixedThreshold",
+      "SingleCenter",
+      "KMeans"
+    ],
+    "summary": [
+      {
+        "method": "FixedThreshold",
+        "n_folds": 10,
+        "local_f1_mean": 0.5051094150678808,
+        "local_f1_std": 0.03593795849060865,
+        "local_false_alarm_rate_mean": 0.0004933327686277866,
+        "local_false_alarm_rate_std": 0.00027528021725571047,
+        "critical_f1_macro_mean": 0.7093446779253931,
+        "critical_f1_macro_std": 0.04985207055373143,
+        "critical_balanced_accuracy_mean": 0.6636613983528444,
+        "critical_balanced_accuracy_std": 0.04234100257870616
+      },
+      {
+        "method": "SingleCenter",
+        "n_folds": 10,
+        "local_f1_mean": 0.7730941775445009,
+        "local_f1_std": 0.027454001845395214,
+        "local_false_alarm_rate_mean": 0.05303034410773193,
+        "local_false_alarm_rate_std": 0.007546324713195729,
+        "critical_f1_macro_mean": 0.847489646384803,
+        "critical_f1_macro_std": 0.033980651766036415,
+        "critical_balanced_accuracy_mean": 0.9332052254331199,
+        "critical_balanced_accuracy_std": 0.01535857788347189
+      },
+      {
+        "method": "KMeans",
+        "n_folds": 10,
+        "local_f1_mean": 0.7762574687798436,
+        "local_f1_std": 0.026665080456129822,
+        "local_false_alarm_rate_mean": 0.05198160590781329,
+        "local_false_alarm_rate_std": 0.006449369293902898,
+        "critical_f1_macro_mean": 0.8638499999170627,
+        "critical_f1_macro_std": 0.03477145502827002,
+        "critical_balanced_accuracy_mean": 0.9414601699831857,
+        "critical_balanced_accuracy_std": 0.01572131931167747
+      }
+    ]
+  },
+  "parameter_grids": {
+    "LogisticRegression": {
+      "clf__C": [
+        0.1,
+        1.0,
+        10.0
+      ],
+      "clf__class_weight": [
+        null,
+        "balanced"
+      ]
+    },
+    "RandomForest": {
+      "clf__max_depth": [
+        4,
+        null
+      ],
+      "clf__min_samples_leaf": [
+        3,
+        10
+      ]
+    },
+    "GradientBoosting": {
+      "clf__max_depth": [
+        1,
+        2
+      ],
+      "clf__learning_rate": [
+        0.05,
+        0.1
+      ]
+    }
+  },
+  "sha256": {
+    "kb/kb.pl": "42d8c058da2022413b5c78714acf9c3b26276249c9f7907e275158aeab37d86a",
+    "kb/rules.json": "eca37629720221012ca28a8056aa4ae847368fca9650c5737e5952ac2fcc0125",
+    "main.py": "6c12e88e918ed0ccbb61ab582e32e887e770d9000c15d75d7fbd84c09138d793",
+    "requirements.txt": "355088c67c7b7a26614e765ff46568fc0793e2b6d80b467ff62ab6f782c4356e",
+    "src/bayesianNetwork.py": "3d08d72944512ee4d5e8567b4417f8cdc72a473a421d070b7b3302d570abdc70",
+    "src/extraAnalysis.py": "5e24f5eab9d9d61e9bef581c8d99d39888487434f1078501a41b3686cdf4354b",
+    "src/main.py": "360a6d5dd3ef176896d4e801b3767f63a547d1f363b2884ba39bbb4aabb6c959",
+    "src/serviceProlog.py": "e1b0725e58649e3b53653494295eb03e2cfb2a7a1895d03f7e91a8121b41f011",
+    "src/servicerescue/__init__.py": "5f96a467cb034f6c02d4717ab920e91b76d60beabcfb9f6f4c3f54366de70bc4",
+    "src/servicerescue/analysis.py": "e92404face1bb505188161346f2c64f7f364fa3b5be93078e7bf767d1b16e99f",
+    "src/servicerescue/bayesian.py": "b0cfdb2748c6d92928dac5387b04fdda49d4ae16b37cdc734a48e4c856eb7209",
+    "src/servicerescue/cli.py": "662826c003f12478820a2cd061f1ad39bc7ee6aeb453b077e48a43531fe84563",
+    "src/servicerescue/domain.py": "a98df311edd722c4070abf6a8929d2b8aaf34b95044e43ff3b967a81a281b876",
+    "src/servicerescue/experiments.py": "ad2664fae7a465f7fd436eb1f278f34d753d35b7dabfab432bdd871cee9851d4",
+    "src/servicerescue/features.py": "41e393702e52b74d42157a78ad0039bed230bb19983e7995a90cab99d058f60b",
+    "src/servicerescue/layout.py": "d9fed3922dad813c30dded4c8809873a67bce2affcaae98dfc72da0e4478a80c",
+    "src/servicerescue/logic.py": "c5c6bd14426aa935f91ab806552608b2eb561f0b041f7d6a171178ce34c9b52c",
+    "src/servicerescue/planning.py": "079e277fbb4a0655226b0d07c2d1d5017f8264ce994cac9b26e0f05ba8e71d2c",
+    "src/servicerescue/prolog.py": "9de4adda7a98b416ed9b6ff40f01a553b92832a34d0aaafea79264feb1a189f9",
+    "src/servicerescue/report.py": "9660802d3eb437379af0475df5c28a8d254a0c26443e2eb9620608c8a6ee35fb",
+    "src/servicerescue/unsupervised.py": "e7d6cc91e384b8d9ec8fa304d9a3696f51d9b3e26f940df074fbc7e762131e8d",
+    "src/supervisedLearning.py": "49354264df96737676dd60c4ce756ef9cead968aaa7a40e02ccf5fe4d4043886",
+    "src/unsupervisedLearning.py": "5cc951bd123652f5603d7152830c568bd58a6eff54ce8ffc67f0e303eb2c66e0"
+  },
+  "dataset_sha256": "15bf004536e84a67660e285e3406b9c4076b083984bf3f7020a834e1adc5ef95",
+  "source_hash_refresh": {
+    "reason": "Aggiornamento dopo modifiche esclusivamente a commenti e docstring; codice eseguibile verificato equivalente tramite AST.",
+    "previous_sha256": {
+      "src/main.py": "8edf42553989ed02bdcb766163a2904041699de00a931df490903e9c76683b50",
+      "src/servicerescue/layout.py": "1bb1bac81097569c55b0fd5ac72148c75219a202dfa2eec4478cce410cf5621e"
+    }
+  }
+}

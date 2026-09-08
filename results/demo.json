@@ -1,0 +1,175 @@
+{
+  "scenario": {
+    "nodes": [
+      "power",
+      "db_a",
+      "db_b",
+      "api",
+      "portal"
+    ],
+    "requires": [
+      [
+        "db_a",
+        "power"
+      ],
+      [
+        "api",
+        "db_a"
+      ],
+      [
+        "portal",
+        "api"
+      ]
+    ],
+    "replicas": [
+      [
+        "portal",
+        "db_a",
+        "db_b"
+      ]
+    ],
+    "critical": [
+      "portal"
+    ],
+    "costs": {
+      "power": 4,
+      "db_a": 7,
+      "db_b": 2,
+      "api": 5,
+      "portal": 9
+    },
+    "zones": {
+      "power": 0,
+      "db_a": 0,
+      "db_b": 1,
+      "api": 1,
+      "portal": 2
+    }
+  },
+  "confirmed_failures": [
+    "db_b",
+    "power"
+  ],
+  "down": [
+    [
+      "api"
+    ],
+    [
+      "db_a"
+    ],
+    [
+      "db_b"
+    ],
+    [
+      "portal"
+    ],
+    [
+      "power"
+    ]
+  ],
+  "explanation": {
+    "fact": [
+      "critical_down",
+      "portal"
+    ],
+    "rule": "critical_impact",
+    "premises": [
+      {
+        "fact": [
+          "critical",
+          "portal"
+        ],
+        "rule": "input",
+        "premises": []
+      },
+      {
+        "fact": [
+          "down",
+          "portal"
+        ],
+        "rule": "down_both_replicas",
+        "premises": [
+          {
+            "fact": [
+              "replicas",
+              "portal",
+              "db_a",
+              "db_b"
+            ],
+            "rule": "input",
+            "premises": []
+          },
+          {
+            "fact": [
+              "down",
+              "db_a"
+            ],
+            "rule": "down_required",
+            "premises": [
+              {
+                "fact": [
+                  "requires",
+                  "db_a",
+                  "power"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "down",
+                  "power"
+                ],
+                "rule": "down_observed",
+                "premises": [
+                  {
+                    "fact": [
+                      "alarm",
+                      "power"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "down",
+              "db_b"
+            ],
+            "rule": "down_observed",
+            "premises": [
+              {
+                "fact": [
+                  "alarm",
+                  "db_b"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "optimal_plan": {
+    "repairs": [
+      "power"
+    ],
+    "cost": 4,
+    "expanded": 3,
+    "seconds": 0.0004541400003290619
+  },
+  "cheapest_plan": {
+    "repairs": [
+      "db_b",
+      "power"
+    ],
+    "cost": 6,
+    "expanded": 3,
+    "seconds": 0.0003986729998359806
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "status": "complete",
+  "domain": "synthetic service dependencies",
+  "purpose": "Sensitivity to redundancy and graph size/density; no cross-domain validation.",
+  "protocol": "Separate nested grouped CV for each dataset, 5 outer x 2 repeats x 3 inner.",
+  "runs": [
+    {
+      "scenario": "standard",
+      "seed": 42,
+      "directory": "full",
+      "min_nodes": 10,
+      "max_nodes": 18,
+      "replica_probability": 0.45,
+      "extra_dependency_probability": 0.35
+    },
+    {
+      "scenario": "redundant",
+      "seed": 73,
+      "directory": "full_redundant",
+      "min_nodes": 10,
+      "max_nodes": 18,
+      "replica_probability": 0.8,
+      "extra_dependency_probability": 0.15
+    },
+    {
+      "scenario": "dense",
+      "seed": 101,
+      "directory": "full_dense",
+      "min_nodes": 20,
+      "max_nodes": 30,
+      "replica_probability": 0.15,
+      "extra_dependency_probability": 0.75
+    }
+  ],
+  "samples_total": 2880
+}

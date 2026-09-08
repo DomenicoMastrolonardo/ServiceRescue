@@ -1,0 +1,2 @@
+model,n_folds,f1_macro_mean,f1_macro_std,balanced_accuracy_mean,balanced_accuracy_std,average_precision_mean,average_precision_std,brier_mean,brier_std,edges_mean,edges_std
+BayesianNetwork,10,0.4406748309538414,0.010595215256761438,0.5,0.0,0.2919214888897983,0.04622658224648701,0.15933300170100356,0.020122496060653465,5.0,0.0

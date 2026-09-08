@@ -1,0 +1,39 @@
+# Ambienti Python locali
+.venv/
+venv/
+env/
+
+# Cache e file generati dagli strumenti Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Risultati temporanei delle prove rapide
+/results/smoke*/
+
+# Configurazioni locali degli strumenti di sviluppo
+.agents/
+.codex/
+.idea/
+.vscode/
+
+# Configurazioni private locali
+.env
+.env.*
+!.env.example
+
+# File temporanei del sistema e dell'editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*
+*.swp
+*.swo
+
+# Archivio di distribuzione locale
+/ServiceRescue-*.zip
