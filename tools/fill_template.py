@@ -169,10 +169,10 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
             'gli allarmi derivano dai sensori e rappresentano ipotesi qualitative; nella ricerca indicano guasti confermati.'
         ],
         31: [
-            'SWI-Prolog 9.0.4 esegue realmente la KB tramite subprocess Python. I predicati reach/3 e down/2 '
+            'SWI-Prolog 9.0.4 esegue la KB tramite subprocess Python. I predicati reach/3 e down/2 '
             'usano tabling, quindi risoluzione SLG [2]. Il verificatore Python implementa un frammento Datalog '
             'positivo mediante unificazione, join e punto fisso sincrono [1]. heapq gestisce la frontiera UCS. '
-            'Non si presentano questi algoritmi standard come contributi originali.'
+            'Gli algoritmi seguono i riferimenti [1] e [2].'
         ],
         32: [
             'Il contributo specifico è la formalizzazione delle dipendenze, il generatore, le feature relazionali '
@@ -480,8 +480,7 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
             'accuracy coincidono con il prior. Gli score contengono qualche informazione '
             '(AP 0,416 e Brier 0,216), ma il modello non discrimina utilmente la classe positiva '
             'con la decisione adottata. Struttura vincolata, discretizzazione e aggregazione '
-            'sono limiti plausibili, non cause isolate sperimentalmente. Non si modifica '
-            'la soglia dopo aver visto i test per nascondere il risultato. Il confronto con '
+            'sono limiti plausibili, non cause isolate sperimentalmente. La soglia resta quella fissata prima della valutazione. Il confronto con '
             'classificatori a 17 feature è descrittivo, poiché la rete usa cinque osservabili.',
             'Query esatta con evidenza parziale, aggregata fra le dieci reti di training; '
             'si riporta P(future_down=1):',
@@ -530,14 +529,14 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
             'non sostituiscono esperimenti su domini indipendenti. '
             'La ricerca ha spazio esponenziale e la rete è limitata a sei variabili; non si rivendica '
             'scalabilità industriale. Le deviazioni standard dei fold non provano significatività.',
-            'Il perimetro stimato è 25 ore: 2 per analisi, 4 per KB e verifica, 2 per generatore, '
+            'La stima di lavoro è di 25 ore: 2 per analisi, 4 per KB e verifica, 2 per generatore, '
             '4 per ML supervisionato, 2 per clustering e monitoraggio, 3 per rete bayesiana, '
             '1 per il benchmark aggiuntivo di ricerca, 4 per valutazione e relazione, 3 per '
-            'riproduzione e discussione. È una stima organizzativa, non un rendiconto di ore svolte. '
+            'verifica della riproducibilità e revisione finale. È una stima organizzativa, non un rendiconto di ore svolte. '
             'K-Means ha un ruolo operativo nella produzione degli allarmi '
             'e viene valutato contro due baseline; la ricerca delle riparazioni resta un contributo aggiuntivo.'
             ' La KB sviluppata è specifica del dominio, mentre interprete e ricerca operano su regole '
-            'e topologie esterne. Non si rivendicano algoritmi nuovi né superiorità sullo stato dell’arte.',
+            'e topologie esterne. Il contributo riguarda l’applicazione e il confronto di algoritmi esistenti nel dominio dei servizi.',
             table(['Criterio tecnico', 'Evidenza e autovalutazione'], [
                 ['Originalità', 'Integrazione di KB, generatore, feature e ricerca per il dominio dei servizi mediante algoritmi standard documentati.'],
                 ['Completezza', 'Rappresentazione, ragionamento ricorsivo, clustering, ricerca, apprendimento supervisionato e probabilistico.'],
@@ -545,7 +544,7 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
                 ['Complessità', 'Congiunzione delle repliche, dipendenze transitive e condivise; analisi dei join, del punto fisso e dello spazio di ricerca.'],
                 ['Generalità', 'Tre famiglie sintetiche nello stesso dominio; assente validazione esterna su dati reali o domini diversi.'],
                 ['Valutazione', 'Tre dataset e CV annidata a gruppi, medie e deviazioni standard; monitoraggio con partizioni indipendenti, oracoli e 26 test.'],
-                ['Documentazione', 'Template originale, componenti indicati con matricola e utenza istituzionale, scelte tecniche, regole, risultati e limiti in questo file.']], [2200, 6826]),
+                ['Documentazione', 'Scelte tecniche, regole, risultati e limiti raccolti nella relazione; dati dell’autore nel frontespizio.']], [2200, 6826]),
             table(['Modulo o cartella', 'Funzione in ServiceRescue-KB'], [
                 ['src/main.py', 'Orchestrazione della pipeline nel dominio dei servizi.'],
                 ['src/serviceProlog.py', 'Preparazione dei dati e inferenza SWI-Prolog.'],

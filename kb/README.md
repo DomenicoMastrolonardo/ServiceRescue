@@ -1,6 +1,6 @@
 # Knowledge Base
 
-La KB principale è `kb.pl`, eseguita realmente da SWI-Prolog. `rules.json` contiene la rappresentazione equivalente utilizzata dal verificatore Datalog. Le variabili iniziano con `?`; gli altri termini sono costanti stringa. Ogni regola contiene nome, testa e lista di atomi del corpo. Tutte le variabili della testa devono comparire nel corpo.
+La KB principale è `kb.pl`, eseguita da SWI-Prolog. `rules.json` contiene la rappresentazione equivalente utilizzata dal verificatore Datalog. Le variabili iniziano con `?`; gli altri termini sono costanti stringa. Ogni regola contiene nome, testa e lista di atomi del corpo. Tutte le variabili della testa devono comparire nel corpo.
 
 ## Fatti di ingresso
 
