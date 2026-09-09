@@ -1,5 +1,7 @@
 # Scheda del dataset sintetico
 
+Questa scheda riguarda il benchmark generato localmente. I dati misurati di RCAEval RE2-OB, la loro provenienza e il protocollo esterno sono descritti in [external/README.md](external/README.md).
+
 **Origine:** generatore originale in `src/servicerescue/domain.py`. Non deriva da un dataset standard e non contiene dati personali. Tutti i valori sono ipotesi del benchmark, non misure o parametri stimati su infrastrutture reali.
 
 **Unità statistica:** una fotografia dei sensori di un’infrastruttura e l’esito futuro del suo servizio critico. Le fotografie della stessa infrastruttura condividono la topologia; sono campionamenti di scenario, non una serie temporale. La generalizzazione valutata riguarda infrastrutture mai viste, campionate dalla stessa famiglia del generatore.

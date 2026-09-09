@@ -1,0 +1,133 @@
+{
+  "case": "re2ob_currencyservice_loss_2",
+  "dataset": "RE2-OB",
+  "suite": "RE2",
+  "system": "ob",
+  "system_name": "Online Boutique",
+  "root_cause_service": "currencyservice",
+  "fault": "loss",
+  "fault_description": "network packet loss",
+  "repetition": 2,
+  "inject_time": 1705708871,
+  "n_metrics": 76,
+  "n_timesteps": 1441,
+  "time_start": 1705708151,
+  "time_end": 1705709591,
+  "duration_minutes": 24.0,
+  "normal_timesteps": 720,
+  "faulty_timesteps": 721,
+  "has_logs": true,
+  "n_logs": 124718,
+  "has_traces": true,
+  "n_traces": 365309,
+  "has_root_cause_file": false,
+  "edges": [
+    {
+      "caller": "checkoutservice",
+      "callee": "currencyservice",
+      "count": 1212
+    },
+    {
+      "caller": "checkoutservice",
+      "callee": "emailservice",
+      "count": 360
+    },
+    {
+      "caller": "checkoutservice",
+      "callee": "paymentservice",
+      "count": 360
+    },
+    {
+      "caller": "checkoutservice",
+      "callee": "productcatalogservice",
+      "count": 852
+    },
+    {
+      "caller": "frontendservice",
+      "callee": "checkoutservice",
+      "count": 360
+    },
+    {
+      "caller": "frontendservice",
+      "callee": "currencyservice",
+      "count": 28022
+    },
+    {
+      "caller": "frontendservice",
+      "callee": "productcatalogservice",
+      "count": 44679
+    },
+    {
+      "caller": "frontendservice",
+      "callee": "recommendationservice",
+      "count": 6861
+    },
+    {
+      "caller": "recommendationservice",
+      "callee": "productcatalogservice",
+      "count": 6861
+    }
+  ],
+  "metrics_columns": [
+    "time",
+    "adservice_cpu",
+    "cartservice_cpu",
+    "checkoutservice_cpu",
+    "currencyservice_cpu",
+    "emailservice_cpu",
+    "frontend_cpu",
+    "paymentservice_cpu",
+    "productcatalogservice_cpu",
+    "recommendationservice_cpu",
+    "redis_cpu",
+    "shippingservice_cpu",
+    "adservice_mem",
+    "cartservice_mem",
+    "checkoutservice_mem",
+    "currencyservice_mem",
+    "emailservice_mem",
+    "frontend_mem",
+    "paymentservice_mem",
+    "productcatalogservice_mem",
+    "recommendationservice_mem",
+    "redis_mem",
+    "shippingservice_mem",
+    "adservice_socket",
+    "cartservice_socket",
+    "checkoutservice_socket",
+    "currencyservice_socket",
+    "emailservice_socket",
+    "frontend_socket",
+    "paymentservice_socket",
+    "productcatalogservice_socket",
+    "recommendationservice_socket",
+    "redis_socket",
+    "shippingservice_socket",
+    "adservice_workload",
+    "cartservice_workload",
+    "checkoutservice_workload",
+    "currencyservice_workload",
+    "emailservice_workload",
+    "frontend_workload",
+    "frontend-external_workload",
+    "paymentservice_workload",
+    "productcatalogservice_workload",
+    "recommendationservice_workload",
+    "shippingservice_workload",
+    "adservice_latency-90",
+    "cartservice_latency-90",
+    "checkoutservice_latency-90",
+    "currencyservice_latency-90",
+    "emailservice_latency-90",
+    "frontend_latency-90",
+    "paymentservice_latency-90",
+    "productcatalogservice_latency-90",
+    "recommendationservice_latency-90",
+    "shippingservice_latency-90"
+  ],
+  "source_hashes": {
+    "metrics.parquet": "a11e3af15c8c574809cb0bc40f5613ebc6865e658f64f217e2e8f763015e8664",
+    "traces.parquet": "aea30bd6de802aa7d2d52951881917b73a650ecf8f29b943a3ad7ae1c8ebea1d"
+  },
+  "derived_sha256": "b3911731517e1ed98fa72d405f6f4d9d4b9c32a6a313cce894ec65ab0211ff66"
+}

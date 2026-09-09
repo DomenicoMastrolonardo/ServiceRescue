@@ -54,6 +54,83 @@ def fill_content():
     if run['status'] != 'complete' or run['seed'] != 42:
         raise ValueError('Il testo delle conclusioni richiede il run completo seed 42')
     metrics = rows('cv_summary.csv')
+    external_run = json.loads((ROOT / 'results/external/rcaeval/run.json').read_text())
+    if external_run['status'] != 'complete' or external_run['cases'] != 90:
+        raise ValueError('Completare la valutazione RCAEval prima di produrre la relazione')
+    external_summary = [r for r in rows('summary.csv', 'external/rcaeval') if r['fault'] == 'ALL']
+    external_cases = rows('cases.csv', 'external/rcaeval')
+    external_lookup = {(r['case'], r['method']): r for r in external_cases}
+    external_delta = [float(external_lookup[(name, 'KMeans')]['f1_macro']) -
+                      float(external_lookup[(name, 'SingleCenter')]['f1_macro'])
+                      for name in sorted({r['case'] for r in external_cases})]
+    external_section = [
+        {'bold': 'Valutazione esterna: RCAEval RE2-OB'},
+        'RCAEval [4] fornisce telemetria misurata su applicazioni in esecuzione su Kubernetes, '
+        'con guasti introdotti sperimentalmente. Si usano tutti i 90 casi RE2-OB di Online Boutique: '
+        'cinque servizi bersaglio, sei tipi di guasto e tre ripetizioni per combinazione. '
+        'Sono dati sperimentali di un sistema eseguito, non incidenti spontanei in produzione. '
+        'La revisione upstream è afeacb11bcc94dadfd1c8f483ee4377b2b8b614e; fonte, licenza MIT e '
+        'hash sono inclusi in data/external/rcaeval/. Gli estratti comprendono CPU, memoria, socket, '
+        'workload e latenza al percentile 90: 53–56 colonne per caso, senza selezionare il servizio '
+        'annotato come causa. Le annotazioni della causa non entrano nei modelli.',
+        'Il compito è distinguere il periodo esposto al fault dal funzionamento nominale. '
+        'Il target è time ≥ inject_time: indica esposizione al guasto iniettato, non prova '
+        'indisponibilità di un servizio. Non è previsione del futuro né localizzazione della causa. '
+        'Per ciascun esperimento si adatta un modello al suo storico: dei 720 campioni nominali, '
+        '432 addestrano, 144 calibrano e 144 restano nel test, insieme a tutti i campioni successivi '
+        'all’iniezione. Due casi hanno registrazioni post-iniezione più corte e sono mantenuti. '
+        'Il protocollo assume uno storico nominale identificabile: il timestamp annotato serve '
+        'a delimitarlo. Non misura generalizzazione a infrastrutture nuove e non è CV annidata; '
+        'la CV annidata resta il protocollo degli esperimenti supervisionati sintetici.',
+        'I valori non finiti sono imputati con le mediane del solo training; eventuali colonne '
+        'interamente mancanti nel training vengono escluse. StandardScaler usa solo il training. '
+        'K-Means sceglie k tra 2 e 7 con silhouette su al massimo 400 campioni di training, '
+        'n_init=10 e seed=42; a parità di score si preferisce k minore. Il centro unico usa la '
+        'media del medesimo training. MaxDeviation usa il massimo valore assoluto dei sensori '
+        'standardizzati. Ogni metodo calibra la propria soglia al percentile 95 dei suoi score '
+        'nominali nei 144 campioni di calibrazione. Si predice anomalia per score strettamente '
+        'superiore alla soglia. Nessun parametro è scelto usando gli esiti dei test.',
+        'Risultati: media e deviazione standard campionaria tra i 90 esperimenti, ciascuno con '
+        'uguale peso. I campioni temporali sono correlati; la dispersione descrive i casi del '
+        'benchmark, non costituisce un intervallo di confidenza o una prova di significatività.',
+        table(['Metodo', 'F1 macro', 'Balanced accuracy', 'Falsi allarmi'],
+              [[r['method'], pm(r, 'f1_macro'), pm(r, 'balanced_accuracy'), pm(r, 'false_alarm_rate')]
+               for r in external_summary]),
+        f'Il delta appaiato F1 di K-Means rispetto al centro unico è '
+        f'{statistics.mean(external_delta):+.4f} ± {statistics.stdev(external_delta):.4f}: '
+        f'{sum(d > 0 for d in external_delta)} casi migliorano, '
+        f'{sum(d < 0 for d in external_delta)} peggiorano e '
+        f'{sum(d == 0 for d in external_delta)} sono pari. Il vantaggio è limitato. '
+        'I falsi allarmi nominali di K-Means sono circa il 14%, superiori al 5% della '
+        'calibrazione: la soglia non garantisce lo stesso tasso su segmenti successivi. '
+        'k=7 è scelto in 67 casi su 90, al limite della griglia: non si assume che i cluster '
+        'identifichino regimi fisici o che il numero di regimi sia stato determinato definitivamente.',
+        'Il grafo delle chiamate nominali supporta un esempio separato di ragionamento. '
+        'Al primo allarme K-Means del test, si prende il servizio della metrica con maggiore '
+        'deviazione assoluta standardizzata. Tre regole esterne, in kb/observed_calls.json, '
+        'derivano percorsi e possibili chiamanti interessati:',
+        code('call_path(S,D) :- calls(S,D).\n'
+             'call_path(S,D) :- calls(S,M), call_path(M,D).\n'
+             'possibly_affected(S) :- call_path(S,D), sensor_alarm(D).'),
+        'Esempio di catena: frontendservice chiama checkoutservice, che chiama paymentservice; '
+        'un sensor_alarm(paymentservice) rende entrambi possibly_affected. Il nome frontend '
+        'nelle metriche è mappato esplicitamente a frontendservice nelle tracce. Gli archi sono '
+        'estratti da tutte le tracce completate prima dell’iniezione: questo esempio è una '
+        'ricostruzione successiva, non un esperimento di diagnosi online. Il grafo non entra '
+        'negli score o nelle soglie dei detector. Non si derivano down o critical_down, '
+        'poiché una chiamata non implica dipendenza obbligatoria. Con N servizi vi sono al '
+        'massimo N² coppie raggiungibili; la ricorsione positiva termina su fatti finiti. '
+        'L’audit confronta i possibili chiamanti con una visita indipendente del grafo. '
+        'Mancano etichette degli effetti su ogni servizio: l’accordo verifica l’implementazione, '
+        'non dimostra correttezza causale né efficacia delle riparazioni su dati reali.',
+        f'Sono conservate {external_run["predictions"]:,} predizioni, modelli, partizioni, '
+        'metriche per caso e per tipo di fault, più esempi con prove Datalog, in '
+        'results/external/rcaeval/. La valutazione usa le dipendenze principali e gli estratti '
+        'inclusi; PyArrow è necessario solo per riscaricare e convertire i Parquet originali. '
+        'Riproduzione e audit:',
+        code('python tools/external/evaluate.py\npython tools/external/audit.py'),
+        {'bold': 'Valutazione supervisionata sui dataset sintetici'},
+    ]
     names = {'LogisticRegression': 'Logistica', 'RandomForest': 'Random Forest',
              'GradientBoosting': 'Gradient Boosting', 'LogicOnly': 'Sola logica', 'DummyPrior': 'Prior'}
     protocol = json.loads((ROOT / 'results/scenarios/protocol.json').read_text())
@@ -123,7 +200,12 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
             'ma non formano una serie temporale. I dati sintetici consentono oracoli di verifica e riproducibilità; '
             'i risultati non costituiscono una validazione su incidenti reali.'
             ' La valutazione è estesa a due ulteriori dataset, ridondante e denso: '
-            'in totale 2.880 esempi di 360 infrastrutture appartenenti a tre famiglie dello stesso dominio.'
+            'in totale 2.880 esempi di 360 infrastrutture appartenenti a tre famiglie dello stesso dominio. '
+            'Una valutazione separata del monitoraggio usa inoltre i 90 casi di RCAEval RE2-OB: '
+            'metriche e tracce di Online Boutique raccolte durante fault injection. Gli archi ricavati '
+            'dalle tracce sono relazioni osservate, non dipendenze obbligatorie, e non vengono usati per '
+            'modificare la KB sintetica. Le metriche permettono di confrontare i detector su '
+            'telemetria esterna; il grafo supporta esempi separati di ragionamento osservazionale.'
         ],
         15: [
             'ServiceRescue-KB è un KBS che rappresenta dipendenze obbligatorie e repliche con clausole di Horn. '
@@ -232,7 +314,7 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
             'Con sei guasti UCS espande 12,667 ± 12,228 stati contro 4,889 ± 2,246 della baseline. '
             'La ricerca ottimale risparmia costo, pagando una maggiore esplorazione. Nella demo riparare '
             'power costa 4 e ripristina portal attraverso db_a e api; cheapest ripara prima db_b, '
-            'spende 6 in totale e non migliora l’obiettivo. I test comprendono cause condivise, repliche, '
+            'poi power, raggiungendo lo stesso obiettivo al costo totale di 6. I test comprendono cause condivise, repliche, '
             'cicli, contesti separati e confronto esaustivo: la correttezza riguarda il dominio formalizzato.'
             ' Nei tre dataset l’accordo Prolog/Datalog è verificato su tutte le 2.880 fotografie. '
             'Le misure seguenti mostrano come varia il lavoro del verificatore; dimensione e densità '
@@ -384,6 +466,7 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
             'fit/calibrazione/test, effetti nella KB e metriche aggregate. La valutazione '
             'su guasti additivi artificiali non dimostra robustezza a drift, guasti silenziosi '
             'o a errori nello storico nominale.',
+            *external_section,
             'Per il dataset standard si riportano media e deviazione standard campionaria (ddof=1) sui dieci fold esterni, '
             'non risultati di un singolo run. Le ripetizioni riusano il dataset: i fold sono correlati '
             'e la deviazione standard non è un intervallo di confidenza. F1 macro guida il tuning; '
@@ -489,7 +572,7 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
                 ['root_down=1, exposed_fraction=1', f'{statistics.mean(posterior):.3f}', f'{statistics.stdev(posterior):.3f}']]),
             'I valori 1 indicano superamento della mediana del relativo training; le altre '
             'tre variabili sono marginalizzate. La variabilità dei posteriori non è una '
-            'misura di accuratezza dello scenario. Le ulteriori 1.920 predizioni della rete '
+            'misura di accuratezza dello scenario. Per ogni dataset le 1.920 predizioni della rete '
             'sono conservate e auditate, incluse le soglie stimate sul solo training.'
             ' Le valutazioni aggiuntive usano lo stesso tuning annidato e producono la seguente '
             'sintesi per dataset; complessivamente vengono auditate 5.760 predizioni bayesiane:',
@@ -504,7 +587,7 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
             'all’oracolo esaustivo. Nel dataset standard la BK migliora in media i tre classificatori '
             'rispetto a input comparabili, ma la sola logica rimane superiore in F1. La rete bayesiana '
             'dimostra apprendimento e inferenza con evidenza parziale, senza superiorità predittiva. '
-            'La suite conta 26 test superati; gli audit confermano integrità dei file e metriche. '
+            'La suite conta 29 test superati, di cui tre per l’estensione esterna; gli audit confermano integrità dei file e metriche. '
             f"La pipeline dello scenario standard ha richiesto circa {run['seconds']:.1f} s sulla macchina usata.",
             'Nel monitoraggio, K-Means alimenta la KB con allarmi ricavati da uno storico '
             'nominale senza etichette di guasto. Il confronto con un unico centro mostra '
@@ -523,16 +606,19 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
             'statisticamente significativa. Densità, dimensione, prevalenza e seed variano '
             'congiuntamente, quindi il confronto non identifica quale fattore causi le differenze.',
             'Generatore e KB condividono deliberatamente la semantica delle dipendenze: i risultati '
-            'sono interni al benchmark sintetico. Restano da valutare dati reali, dipendenze mancanti, '
+            'sono interni al benchmark sintetico. RCAEval amplia la valutazione del monitoraggio '
+            'su telemetria misurata, con un vantaggio piccolo di K-Means sul centro unico e falsi '
+            'allarmi ancora frequenti. Restano da valutare incidenti spontanei in produzione, dipendenze mancanti, '
             'topologie cicliche nella valutazione predittiva, drift, effetti incerti e tempi delle riparazioni. '
             'Le tre famiglie sintetiche ampliano la valutazione nel dominio dei servizi; '
             'non sostituiscono esperimenti su domini indipendenti. '
             'La ricerca ha spazio esponenziale e la rete è limitata a sei variabili; non si rivendica '
             'scalabilità industriale. Le deviazioni standard dei fold non provano significatività.',
-            'La stima di lavoro è di 25 ore: 2 per analisi, 4 per KB e verifica, 2 per generatore, '
+            'La stima iniziale del nucleo sintetico è di 25 ore: 2 per analisi, 4 per KB e verifica, 2 per generatore, '
             '4 per ML supervisionato, 2 per clustering e monitoraggio, 3 per rete bayesiana, '
             '1 per il benchmark aggiuntivo di ricerca, 4 per valutazione e relazione, 3 per '
-            'verifica della riproducibilità e revisione finale. È una stima organizzativa, non un rendiconto di ore svolte. '
+            'verifica della riproducibilità e revisione finale. È una stima organizzativa, non un rendiconto di ore svolte; '
+            'non comprende l’estensione RCAEval, che non è stata cronometrata. '
             'K-Means ha un ruolo operativo nella produzione degli allarmi '
             'e viene valutato contro due baseline; la ricerca delle riparazioni resta un contributo aggiuntivo.'
             ' La KB sviluppata è specifica del dominio, mentre interprete e ricerca operano su regole '
@@ -542,8 +628,8 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
                 ['Completezza', 'Rappresentazione, ragionamento ricorsivo, clustering, ricerca, apprendimento supervisionato e probabilistico.'],
                 ['Significatività', 'Confronti con sola logica, prior, feature senza relazioni e strategia di riparazione economica; utilità condizionata al simulatore.'],
                 ['Complessità', 'Congiunzione delle repliche, dipendenze transitive e condivise; analisi dei join, del punto fisso e dello spazio di ricerca.'],
-                ['Generalità', 'Tre famiglie sintetiche nello stesso dominio; assente validazione esterna su dati reali o domini diversi.'],
-                ['Valutazione', 'Tre dataset e CV annidata a gruppi, medie e deviazioni standard; monitoraggio con partizioni indipendenti, oracoli e 26 test.'],
+                ['Generalità', 'Tre famiglie sintetiche e monitoraggio su 90 esperimenti RCAEval; assente validazione causale o delle riparazioni in produzione.'],
+                ['Valutazione', 'CV annidata a gruppi su tre dataset sintetici; test temporali RCAEval, medie e deviazioni standard, oracoli e 29 test.'],
                 ['Documentazione', 'Scelte tecniche, regole, risultati e limiti raccolti nella relazione; dati dell’autore nel frontespizio.']], [2200, 6826]),
             table(['Modulo o cartella', 'Funzione in ServiceRescue-KB'], [
                 ['src/main.py', 'Orchestrazione della pipeline nel dominio dei servizi.'],
@@ -574,7 +660,12 @@ degraded(C,S) :- replicas(C,S,_,B), down(C,B).'''
              'https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.StratifiedGroupKFold.html; '
              'Common pitfalls, https://scikit-learn.org/stable/common_pitfalls.html; Permutation importance, '
              'https://scikit-learn.org/stable/modules/permutation_importance.html. Versione usata: 1.7.2; '
-             'i collegamenti stable possono descrivere versioni successive.'],
+             'i collegamenti stable possono descrivere versioni successive.',
+             '[4] L. Pham, H. Zhang, H. Ha, F. Salim, X. Zhang, RCAEval: A Benchmark for Root Cause Analysis '
+             'of Microservice Systems with Telemetry Data, WWW Companion 2025. '
+             'https://doi.org/10.1145/3701716.3715290. Dataset: '
+             'https://huggingface.co/datasets/phamquiluan/RCAEval; '
+             'https://github.com/phamquiluan/RCAEval. Licenza MIT degli autori conservata con gli estratti.'],
     }
 
 
@@ -671,6 +762,9 @@ def main():
             body.append(node)
             continue
         for n, item in enumerate(replacements[index]):
+            # Un paragrafo separatore impedisce a Word di fondere tabelle adiacenti.
+            if isinstance(item, dict) and 'table' in item and len(body) and body[-1].tag == tag('tbl'):
+                body.append(paragraph(node, ''))
             body.append(word_table(item) if isinstance(item, dict) and 'table' in item
                         else paragraph(node, item, keep_identity=n == 0))
     rendered = ET.tostring(document, encoding='utf-8', xml_declaration=True).decode('utf-8')

@@ -1,0 +1,5684 @@
+[
+  {
+    "case": "re2ob_checkoutservice_cpu_1",
+    "detected": true,
+    "time": 1705354447.0,
+    "largest_deviation_metric": "adservice_latency-90",
+    "sensor_alarm": "adservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_checkoutservice_cpu_2",
+    "detected": true,
+    "time": 1708475217.0,
+    "largest_deviation_metric": "shippingservice_mem",
+    "sensor_alarm": "shippingservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_checkoutservice_cpu_3",
+    "detected": true,
+    "time": 1705623410.0,
+    "largest_deviation_metric": "paymentservice_mem",
+    "sensor_alarm": "paymentservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "paymentservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "paymentservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "paymentservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_delay_1",
+    "detected": true,
+    "time": 1705666397.0,
+    "largest_deviation_metric": "currencyservice_mem",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_delay_2",
+    "detected": true,
+    "time": 1705668946.0,
+    "largest_deviation_metric": "checkoutservice_latency-90",
+    "sensor_alarm": "checkoutservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "checkoutservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "checkoutservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_delay_3",
+    "detected": true,
+    "time": 1705671361.0,
+    "largest_deviation_metric": "checkoutservice_latency-90",
+    "sensor_alarm": "checkoutservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "checkoutservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "checkoutservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_disk_1",
+    "detected": true,
+    "time": 1705373768.0,
+    "largest_deviation_metric": "emailservice_cpu",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_disk_2",
+    "detected": true,
+    "time": 1705765386.0,
+    "largest_deviation_metric": "checkoutservice_latency-90",
+    "sensor_alarm": "checkoutservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "checkoutservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "checkoutservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_disk_3",
+    "detected": true,
+    "time": 1705767681.0,
+    "largest_deviation_metric": "adservice_mem",
+    "sensor_alarm": "adservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_checkoutservice_loss_1",
+    "detected": true,
+    "time": 1705376287.0,
+    "largest_deviation_metric": "checkoutservice_latency-90",
+    "sensor_alarm": "checkoutservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "checkoutservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "checkoutservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_loss_2",
+    "detected": true,
+    "time": 1705673791.0,
+    "largest_deviation_metric": "checkoutservice_latency-90",
+    "sensor_alarm": "checkoutservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "checkoutservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "checkoutservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_loss_3",
+    "detected": true,
+    "time": 1708489079.0,
+    "largest_deviation_metric": "paymentservice_mem",
+    "sensor_alarm": "paymentservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "paymentservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "paymentservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "paymentservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_mem_1",
+    "detected": true,
+    "time": 1705461956.0,
+    "largest_deviation_metric": "redis_cpu",
+    "sensor_alarm": "redis",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_checkoutservice_mem_2",
+    "detected": true,
+    "time": 1705625941.0,
+    "largest_deviation_metric": "redis_mem",
+    "sensor_alarm": "redis",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_checkoutservice_mem_3",
+    "detected": true,
+    "time": 1705627763.0,
+    "largest_deviation_metric": "emailservice_workload",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_socket_1",
+    "detected": true,
+    "time": 1705656320.0,
+    "largest_deviation_metric": "checkoutservice_cpu",
+    "sensor_alarm": "checkoutservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "checkoutservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "checkoutservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_checkoutservice_socket_2",
+    "detected": true,
+    "time": 1705660213.0,
+    "largest_deviation_metric": "shippingservice_mem",
+    "sensor_alarm": "shippingservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_checkoutservice_socket_3",
+    "detected": true,
+    "time": 1705663947.0,
+    "largest_deviation_metric": "recommendationservice_latency-90",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_cpu_1",
+    "detected": true,
+    "time": 1705682802.0,
+    "largest_deviation_metric": "emailservice_latency-90",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_cpu_2",
+    "detected": true,
+    "time": 1705685095.0,
+    "largest_deviation_metric": "frontend_cpu",
+    "sensor_alarm": "frontendservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_currencyservice_cpu_3",
+    "detected": true,
+    "time": 1705687651.0,
+    "largest_deviation_metric": "frontend_latency-90",
+    "sensor_alarm": "frontendservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_currencyservice_delay_1",
+    "detected": true,
+    "time": 1705701893.0,
+    "largest_deviation_metric": "productcatalogservice_cpu",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_delay_2",
+    "detected": true,
+    "time": 1705704361.0,
+    "largest_deviation_metric": "currencyservice_latency-90",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_delay_3",
+    "detected": true,
+    "time": 1705706626.0,
+    "largest_deviation_metric": "currencyservice_latency-90",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_disk_1",
+    "detected": true,
+    "time": 1705386682.0,
+    "largest_deviation_metric": "currencyservice_mem",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_disk_2",
+    "detected": true,
+    "time": 1705692448.0,
+    "largest_deviation_metric": "currencyservice_mem",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_disk_3",
+    "detected": true,
+    "time": 1705694708.0,
+    "largest_deviation_metric": "recommendationservice_cpu",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_loss_1",
+    "detected": true,
+    "time": 1705388857.0,
+    "largest_deviation_metric": "cartservice_mem",
+    "sensor_alarm": "cartservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_currencyservice_loss_2",
+    "detected": true,
+    "time": 1705708748.0,
+    "largest_deviation_metric": "frontend_socket",
+    "sensor_alarm": "frontendservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_currencyservice_loss_3",
+    "detected": true,
+    "time": 1705711171.0,
+    "largest_deviation_metric": "cartservice_latency-90",
+    "sensor_alarm": "cartservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_currencyservice_mem_1",
+    "detected": true,
+    "time": 1705464509.0,
+    "largest_deviation_metric": "recommendationservice_mem",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_mem_2",
+    "detected": true,
+    "time": 1705749816.0,
+    "largest_deviation_metric": "redis_mem",
+    "sensor_alarm": "redis",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_currencyservice_mem_3",
+    "detected": true,
+    "time": 1705690065.0,
+    "largest_deviation_metric": "currencyservice_mem",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_socket_1",
+    "detected": true,
+    "time": 1705479517.0,
+    "largest_deviation_metric": "frontend_mem",
+    "sensor_alarm": "frontendservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_currencyservice_socket_2",
+    "detected": true,
+    "time": 1705697244.0,
+    "largest_deviation_metric": "currencyservice_mem",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_currencyservice_socket_3",
+    "detected": true,
+    "time": 1705699485.0,
+    "largest_deviation_metric": "emailservice_latency-90",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_cpu_1",
+    "detected": true,
+    "time": 1705350177.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_cpu_2",
+    "detected": true,
+    "time": 1705593001.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_cpu_3",
+    "detected": true,
+    "time": 1705595349.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_delay_1",
+    "detected": true,
+    "time": 1705733247.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_delay_2",
+    "detected": true,
+    "time": 1705735735.0,
+    "largest_deviation_metric": "emailservice_latency-90",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_delay_3",
+    "detected": true,
+    "time": 1705737915.0,
+    "largest_deviation_metric": "adservice_cpu",
+    "sensor_alarm": "adservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_emailservice_disk_1",
+    "detected": true,
+    "time": 1705370101.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_disk_2",
+    "detected": true,
+    "time": 1705602820.0,
+    "largest_deviation_metric": "productcatalogservice_mem",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_disk_3",
+    "detected": true,
+    "time": 1705719214.0,
+    "largest_deviation_metric": "emailservice_latency-90",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_loss_1",
+    "detected": true,
+    "time": 1705351687.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_loss_2",
+    "detected": true,
+    "time": 1705740299.0,
+    "largest_deviation_metric": "redis_cpu",
+    "sensor_alarm": "redis",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_emailservice_loss_3",
+    "detected": true,
+    "time": 1705742652.0,
+    "largest_deviation_metric": "adservice_latency-90",
+    "sensor_alarm": "adservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_emailservice_mem_1",
+    "detected": true,
+    "time": 1705475520.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_mem_2",
+    "detected": true,
+    "time": 1705597987.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_mem_3",
+    "detected": true,
+    "time": 1705600362.0,
+    "largest_deviation_metric": "paymentservice_mem",
+    "sensor_alarm": "paymentservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "paymentservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "paymentservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "paymentservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_socket_1",
+    "detected": true,
+    "time": 1705726265.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_socket_2",
+    "detected": true,
+    "time": 1705728507.0,
+    "largest_deviation_metric": "productcatalogservice_workload",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_emailservice_socket_3",
+    "detected": true,
+    "time": 1705730893.0,
+    "largest_deviation_metric": "paymentservice_mem",
+    "sensor_alarm": "paymentservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "paymentservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "paymentservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "paymentservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_cpu_1",
+    "detected": true,
+    "time": 1705340546.0,
+    "largest_deviation_metric": "productcatalogservice_mem",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_cpu_2",
+    "detected": true,
+    "time": 1705486733.0,
+    "largest_deviation_metric": "frontend_mem",
+    "sensor_alarm": "frontendservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_productcatalogservice_cpu_3",
+    "detected": true,
+    "time": 1705489106.0,
+    "largest_deviation_metric": "currencyservice_cpu",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_delay_1",
+    "detected": true,
+    "time": 1705394471.0,
+    "largest_deviation_metric": "shippingservice_latency-90",
+    "sensor_alarm": "shippingservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_productcatalogservice_delay_2",
+    "detected": true,
+    "time": 1705514422.0,
+    "largest_deviation_metric": "adservice_mem",
+    "sensor_alarm": "adservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_productcatalogservice_delay_3",
+    "detected": true,
+    "time": 1705516844.0,
+    "largest_deviation_metric": "productcatalogservice_latency-90",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_disk_1",
+    "detected": true,
+    "time": 1705360621.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_disk_2",
+    "detected": true,
+    "time": 1705496119.0,
+    "largest_deviation_metric": "productcatalogservice_mem",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_disk_3",
+    "detected": true,
+    "time": 1708472839.0,
+    "largest_deviation_metric": "productcatalogservice_cpu",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_loss_1",
+    "detected": true,
+    "time": 1705342840.0,
+    "largest_deviation_metric": "frontend_socket",
+    "sensor_alarm": "frontendservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_productcatalogservice_loss_2",
+    "detected": true,
+    "time": 1705519004.0,
+    "largest_deviation_metric": "currencyservice_workload",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_loss_3",
+    "detected": true,
+    "time": 1705717090.0,
+    "largest_deviation_metric": "currencyservice_mem",
+    "sensor_alarm": "currencyservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "currencyservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "currencyservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "currencyservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_mem_1",
+    "detected": true,
+    "time": 1705357472.0,
+    "largest_deviation_metric": "redis_cpu",
+    "sensor_alarm": "redis",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_productcatalogservice_mem_2",
+    "detected": true,
+    "time": 1705491513.0,
+    "largest_deviation_metric": "cartservice_mem",
+    "sensor_alarm": "cartservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_productcatalogservice_mem_3",
+    "detected": true,
+    "time": 1705493780.0,
+    "largest_deviation_metric": "adservice_latency-90",
+    "sensor_alarm": "adservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_productcatalogservice_socket_1",
+    "detected": true,
+    "time": 1705392089.0,
+    "largest_deviation_metric": "cartservice_mem",
+    "sensor_alarm": "cartservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_productcatalogservice_socket_2",
+    "detected": true,
+    "time": 1705509544.0,
+    "largest_deviation_metric": "checkoutservice_cpu",
+    "sensor_alarm": "checkoutservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "checkoutservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "checkoutservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_productcatalogservice_socket_3",
+    "detected": true,
+    "time": 1705512002.0,
+    "largest_deviation_metric": "shippingservice_mem",
+    "sensor_alarm": "shippingservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_recommendationservice_cpu_1",
+    "detected": true,
+    "time": 1705345777.0,
+    "largest_deviation_metric": "recommendationservice_mem",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_cpu_2",
+    "detected": true,
+    "time": 1705525718.0,
+    "largest_deviation_metric": "recommendationservice_cpu",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_cpu_3",
+    "detected": true,
+    "time": 1705528140.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_delay_1",
+    "detected": true,
+    "time": 1705400299.0,
+    "largest_deviation_metric": "cartservice_cpu",
+    "sensor_alarm": "cartservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_recommendationservice_delay_2",
+    "detected": true,
+    "time": 1705545199.0,
+    "largest_deviation_metric": "frontend_cpu",
+    "sensor_alarm": "frontendservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_recommendationservice_delay_3",
+    "detected": true,
+    "time": 1705547618.0,
+    "largest_deviation_metric": "productcatalogservice_cpu",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_disk_1",
+    "detected": true,
+    "time": 1705366446.0,
+    "largest_deviation_metric": "productcatalogservice_cpu",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_disk_2",
+    "detected": true,
+    "time": 1705535317.0,
+    "largest_deviation_metric": "recommendationservice_mem",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_disk_3",
+    "detected": true,
+    "time": 1705537940.0,
+    "largest_deviation_metric": "recommendationservice_mem",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_loss_1",
+    "detected": true,
+    "time": 1705347244.0,
+    "largest_deviation_metric": "emailservice_mem",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_loss_2",
+    "detected": true,
+    "time": 1705583479.0,
+    "largest_deviation_metric": "recommendationservice_latency-90",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_loss_3",
+    "detected": true,
+    "time": 1705757188.0,
+    "largest_deviation_metric": "paymentservice_cpu",
+    "sensor_alarm": "paymentservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "paymentservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "paymentservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "paymentservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "paymentservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "paymentservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_mem_1",
+    "detected": true,
+    "time": 1705458143.0,
+    "largest_deviation_metric": "checkoutservice_latency-90",
+    "sensor_alarm": "checkoutservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "checkoutservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "checkoutservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_mem_2",
+    "detected": true,
+    "time": 1705530693.0,
+    "largest_deviation_metric": "recommendationservice_mem",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_mem_3",
+    "detected": true,
+    "time": 1705533044.0,
+    "largest_deviation_metric": "productcatalogservice_mem",
+    "sensor_alarm": "productcatalogservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice",
+      "recommendationservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "recommendationservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "recommendationservice",
+              "productcatalogservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "recommendationservice",
+                  "productcatalogservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "productcatalogservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_socket_1",
+    "detected": true,
+    "time": 1705398169.0,
+    "largest_deviation_metric": "shippingservice_cpu",
+    "sensor_alarm": "shippingservice",
+    "possibly_affected": [],
+    "proofs": []
+  },
+  {
+    "case": "re2ob_recommendationservice_socket_2",
+    "detected": true,
+    "time": 1705540252.0,
+    "largest_deviation_metric": "recommendationservice_latency-90",
+    "sensor_alarm": "recommendationservice",
+    "possibly_affected": [
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "recommendationservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "recommendationservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "recommendationservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "case": "re2ob_recommendationservice_socket_3",
+    "detected": true,
+    "time": 1705542702.0,
+    "largest_deviation_metric": "emailservice_cpu",
+    "sensor_alarm": "emailservice",
+    "possibly_affected": [
+      "checkoutservice",
+      "frontendservice"
+    ],
+    "proofs": [
+      {
+        "fact": [
+          "possibly_affected",
+          "checkoutservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "checkoutservice",
+              "emailservice"
+            ],
+            "rule": "direct_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "input",
+                "premises": []
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      },
+      {
+        "fact": [
+          "possibly_affected",
+          "frontendservice"
+        ],
+        "rule": "possible_impact",
+        "premises": [
+          {
+            "fact": [
+              "call_path",
+              "frontendservice",
+              "emailservice"
+            ],
+            "rule": "indirect_call",
+            "premises": [
+              {
+                "fact": [
+                  "calls",
+                  "frontendservice",
+                  "checkoutservice"
+                ],
+                "rule": "input",
+                "premises": []
+              },
+              {
+                "fact": [
+                  "call_path",
+                  "checkoutservice",
+                  "emailservice"
+                ],
+                "rule": "direct_call",
+                "premises": [
+                  {
+                    "fact": [
+                      "calls",
+                      "checkoutservice",
+                      "emailservice"
+                    ],
+                    "rule": "input",
+                    "premises": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "fact": [
+              "sensor_alarm",
+              "emailservice"
+            ],
+            "rule": "input",
+            "premises": []
+          }
+        ]
+      }
+    ]
+  }
+]

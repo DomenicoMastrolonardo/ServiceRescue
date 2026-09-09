@@ -1,0 +1,5 @@
+[
+  {"name": "direct_call", "head": ["call_path", "?S", "?D"], "body": [["calls", "?S", "?D"]]},
+  {"name": "indirect_call", "head": ["call_path", "?S", "?D"], "body": [["calls", "?S", "?M"], ["call_path", "?M", "?D"]]},
+  {"name": "possible_impact", "head": ["possibly_affected", "?S"], "body": [["call_path", "?S", "?D"], ["sensor_alarm", "?D"]]}
+]

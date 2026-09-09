@@ -1,5 +1,7 @@
 # Knowledge Base
 
+Questa scheda descrive le dodici regole del benchmark sintetico. L’estensione RCAEval usa separatamente `observed_calls.json`: tre regole per percorsi di chiamata e possibili effetti di un allarme. Queste ultime non derivano indisponibilità; significato e limiti sono descritti in `data/external/README.md` e nel documento Word.
+
 La KB principale è `kb.pl`, eseguita da SWI-Prolog. `rules.json` contiene la rappresentazione equivalente utilizzata dal verificatore Datalog. Le variabili iniziano con `?`; gli altri termini sono costanti stringa. Ogni regola contiene nome, testa e lista di atomi del corpo. Tutte le variabili della testa devono comparire nel corpo.
 
 ## Fatti di ingresso
